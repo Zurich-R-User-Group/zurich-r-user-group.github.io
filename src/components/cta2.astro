@@ -1,0 +1,31 @@
+---
+import Link from "./ui/link.astro";
+---
+
+<section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12">
+    <div
+      class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
+      <h2 class="text-white text-4xl md:text-6xl tracking-tight">
+        Want to get involved?
+      </h2>
+      <!-- grid start -->
+      <div
+        class="grid grid-cols-1 gap-4 mt-6 items-center list-none lg:grid-cols-2 lg:gap-24">
+        <div>
+          <!-- grid1 start -->
+          <div class="mt-6 flex flex-col items-center justify-center">
+            <Link href="/contact" style="inverted">Host an Event!</Link>
+          </div>
+        </div>
+        <!-- grid1 end -->
+        <!-- grid2 start -->
+        <div class="mt-6 flex flex-col items-center justify-center">
+          <Link href="/contact" style="inverted">Give a Talk!</Link>
+        </div>
+      </div>
+      <!-- grid2 end -->
+    </div>
+  </div>
+</section>

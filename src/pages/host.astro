@@ -1,0 +1,90 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedTeamMembers = await getCollection("team", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+---
+
+<Layout title="About">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Host an R User Group Event</Fragment>
+      <Fragment slot="desc">Bring Zurich's Data Enthusiasts to Your Organization</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Are You a useR ? 
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Do you have a team of open source enthusiasts? Are you interested to point other data enthusiasts to your
+        organization or simply want to support the open source community?
+      </p>
+      <p>
+        fo shizzle.
+      </p>
+    </div>
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Meet the Origanizers
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        We are a team of R and data enthusiasts with different backgrounds and different points in our careers. 
+      </p>
+      <p>
+        sayin this and that cause this and that was missing. 
+      </p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12 mb-12">
+      {
+        publishedTeamMembers.map((teamMemberEntry) => (
+          <div class="group">
+            
+            <div class="mt-4 text-center">
+              <h2 class="text-lg text-gray-800">{teamMemberEntry.data.name}</h2>
+              <h3 class="text-sm text-slate-500">
+                {teamMemberEntry.data.title}
+              </h3>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16 mb-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Past Hosts
+      </h2>
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        
+        <tbody>
+            <tr>
+                <td class="px-6 py-4"><a href="https://www.cynkra.com/" class="text-lg text-blue-600 hover:underline">cynkra</a></td>
+                <td class="px-6 py-4"><a href="https://www.datahouse.ch/" class="text-blue-600 text-lg hover:underline">datahouse</a></td>
+                <td class="px-6 py-4"><a href="http://www.ebay.ch/" class="text-blue-600 text-lg hover:underline">eBay</a></td>
+                <td class="px-6 py-4"><a href="https://www.helbling.ch/" class="text-blue-600 text-lg hover:underline">Helbling Group</a></td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4"><a href="https://zurich.impacthub.ch/" class="text-blue-600 text-lg hover:underline">Impact Hub Zurich</a></td>
+                <td class="px-6 py-4"><a href="https://www.microsoft.com/en-us/" class="text-blue-600 text-lg hover:underline">Microsoft</a></td>
+                <td class="px-6 py-4"><a href="http://www.mirai-solutions.ch/" class="text-blue-600 text-lg hover:underline">Mirai Solutions</a></td>
+                <td class="px-6 py-4"><a href="https://www.nzz.ch/" class="text-blue-600 text-lg hover:underline">Neue Zürcher Zeitung</a></td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4"><a href="https://partnerre.com/" class="text-blue-600 text-lg hover:underline">PartnerRe</a></td>
+                <td class="px-6 py-4"><a href="https://www.r-consortium.org/projects/r-user-group-support-program" class="text-blue-600 text-lg hover:underline">R Consortium</a></td>
+                <td class="px-6 py-4"><a href="https://www.rstudio.com/" class="text-blue-600 text-lg hover:underline">RStudio</a></td>
+                <td class="px-6 py-4"><a href="https://www.sanitas.com/" class="text-blue-600 text-lg hover:underline">Sanitas</a></td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4"><a href="https://statistik.zh.ch/internet/justiz_inneres/statistik/en/home.html" class="text-blue-600 text-lg hover:underline">
+                  Statistical Office Kanton Zurich</a></td>
+            </tr>
+    </div>
+  </Container>
+</Layout>

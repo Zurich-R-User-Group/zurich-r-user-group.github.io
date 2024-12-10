@@ -1,0 +1,48 @@
+---
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<main
+  class="w-3/4 pt-16 pb-8 md:pt-12 md:pb-6">
+  
+  <!-- <div class="py-6 md:order-1 hidden md:block max-w-md mx-auto">
+import { Picture } from "astro:assets";
+import heroImage from "assets/zru_logo_old.png";
+
+  <Picture
+      src={heroImage}
+      alt="Zurich R User Group"
+      widths={[200, 400, 600]}
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading="eager"
+      format="avif"
+      class="w-full h-auto"
+    />
+  </div>
+   -->
+  <div>
+    <h1
+      class="text-5xl lg:text-6xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter">
+      Connect With More Than 2'300 R and Data Enthusiasts!
+    </h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+    Founded in 2014, the Zurich R User group is one of the largest R user groups in Europe.
+    Join one of our meetup events and become part of a lively analytics community. 
+    Thanks to our speakers, hosts and sponsors our events are completely free. 
+    </p>
+
+    
+  </div>
+</main>
+
+<div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+  <Link
+    href="https://www.meetup.com/zurich-r-user-group/"
+    target="_blank"
+    class="flex gap-1"
+    rel="noopener">
+    <!-- <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" /> -->
+    Attend a Meetup
+  </Link>
+</div>

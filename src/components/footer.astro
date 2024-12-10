@@ -1,0 +1,46 @@
+---
+import Container from "./container.astro";
+---
+
+<header>
+  <!-- styling start - underline when hovering - currently only underlined when clicking, not when hovering?-->
+  <style>
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <!-- styling end -->
+  <nav class="absolute z-50 w-full bg-black dark:lg">
+    <Container>
+      <!-- 2 grid start -->
+      <div
+        class="mt-12 grid sm:grid-cols-3 gap-4 sm:gap-12 max-w-3xl w-full mx-auto">
+        <div></div>
+        <div class="space-y-3">
+          <h2 class="text-gray-100 dark:text-black text-xl font-semibold">
+            Links
+          </h2>
+          <p class="text-gray-400 dark:text-gray-400">
+            <a href="https://github.com/zurich-r-user-group">GitHub Organization</a>
+          </p>
+          <p class="text-gray-400 dark:text-gray-400">
+            <a href="https://www.meetup.com/zurich-r-user-group/events/past/">
+              On Meetup</a>
+          </p>
+          <p class="text-gray-400 dark:text-gray-400">
+            <a href="https://www.meetup.com/zurich-r-user-group/events/past/">
+              Become A Sponsor</a>
+          </p>
+        </div>
+        <div class="space-y-3">
+          <h2 class="text-gray-100 dark:text-black text-xl font-semibold">
+            Zurich R User Group
+          </h2>
+        </div>
+      </div>
+      <!-- 2 grid end -->
+      <br /></Container
+    >
+    <!-- is there a better way to add padding here? its the same top and bottom coincidentally, but should be done soemwhere-->
+  </nav>
+</header>

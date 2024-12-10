@@ -1,0 +1,51 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "Diverse Hosts",
+    description:
+      "Our events are hosted by large variety of institutions that work with data. From academia, the public and private sector alike.",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "Talks with Application in Mind",
+    description:
+      "Learn how others use and integrate R. Learn about new packages, implementations and trends.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "Networking & Community",
+    description:
+      "Our events are designed with plenty of time to network and exchange. From in-depth technical discussions to job market postings.",
+    icon: "bx:bxs-data",
+  },
+
+];
+---
+
+<div class="mt-0 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Our Meetup Events
+  </h2>
+  <p class="text-lg w-3/4 mt-4 text-slate-600">
+   From logistics and climate research to data journalism and real estate data. Visit our events in the Zurich greater area and learn from a broad variety of applications.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 mb-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
