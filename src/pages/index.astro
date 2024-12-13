@@ -12,15 +12,15 @@ import Layout from "@layouts/Layout.astro";
 
 <script>
   import confetti from 'canvas-confetti';
-  document.addEventListener('DOMContentLoaded', (event) => {
+  document.addEventListener('DOMContentLoaded', (event: Event) => {
     // Your script here
     confetti({
-      particleCount: 1000,
-      gravity: 0.4,
-      spread: 300
-    }
-    );
-  });
+        particleCount: 1000,
+        gravity: 0.4,
+        spread: 300
+    });
+});
+
 </script>
 
 

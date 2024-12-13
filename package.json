@@ -27,5 +27,8 @@
     "canvas-confetti": "^1.9.3",
     "sharp": "^0.33.4",
     "tailwindcss": "^3.4.3"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.6.4"
   }
 }

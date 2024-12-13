@@ -1,6 +1,7 @@
 {
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
+    "verbatimModuleSyntax": true,
     "baseUrl": "src",
     "strictNullChecks": true,
     "types": ["astro/client"],

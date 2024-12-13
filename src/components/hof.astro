@@ -2,48 +2,52 @@
 
 ---
 
+<style>
+    .table-alternate tbody tr:nth-child(odd) {
+        background-color: #f9f9f9; /* Light gray for odd rows */
+    }
+    .table-alternate tbody tr:nth-child(even) {
+        background-color: #ffffff; /* White for even rows */
+    }
+</style>
+
+<style>
+    .table-hover tbody tr:hover {
+        background-color: #e9e9e9; /* Slightly toned gray on hover */
+    }
+    .col-30 { 
+        width: 30%; 
+    }
+
+
+</style>
+
+
 
 <div class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 mb-12 scroll-mt-12">
-<div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Past Events 2023
-  </h2>
-</div> 
-
-
-
-
-  <!-- table start -->
+  <!-- tables start -->
   <div class="relative overflow-x-auto">
-    <style>
-        .table-alternate tbody tr:nth-child(odd) {
-            background-color: #f9f9f9; /* Light gray for odd rows */
-        }
-        .table-alternate tbody tr:nth-child(even) {
-            background-color: #ffffff; /* White for even rows */
-        }
-    </style>
-    
-    <style>
-        .table-hover tbody tr:hover {
-            background-color: #e9e9e9; /* Slightly toned gray on hover */
-        }
-    </style>
-    
-    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
+
+  <div id="page-2023" class="table-content">
+    <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+          Past Events 2023
+        </h2>
+      </div> 
+    <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
         <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
             <tr>
-                <th scope="col" class="px-6 py-3">Topic</th>
-                <th scope="col" class="px-6 py-3">Host</th>
-                <th scope="col" class="px-6 py-3">Speakers</th>
-                <th scope="col" class="px-6 py-3">Slides</th>
+                <th scope="col" class="px-6 py-3 w-1/12">Topic</th>
+                <th scope="col" class="px-6 py-3 w-5/12">Host</th>
+                <th scope="col" class="px-6 py-3 w-4/12">Speakers</th>
+                <th scope="col" class="px-6 py-3 w-2/12">Slides</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row"  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     November 2, 2023: Unveiling Market Insights with Real Estate
-                </th>
+                </td    >
                 <td class="px-6 py-4">
                     Datahouse
                 </td>
@@ -98,8 +102,9 @@
             </tr>
         </tbody>
         </table>
+ </div>
 
-
+  <div id="page-2022" class="table-content hidden">
         <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
             <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
               2022
@@ -107,10 +112,10 @@
           </div> 
 
         
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover ">
             <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
-                    <th scope="col" class="px-6 py-3">Topic</th>
+                    <th scope="col" class="px-6 py-3" style="width: 20%;">Topic</th>
                     <th scope="col" class="px-6 py-3">Host</th>
                     <th scope="col" class="px-6 py-3">Speakers</th>
                     <th scope="col" class="px-6 py-3">Slides</th>
@@ -177,7 +182,9 @@
             </tbody>
             </table>
 
+  </div>
 
+  <div id="page-2021" class="table-content hidden">
             <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
                 <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
                   2021
@@ -226,7 +233,9 @@
             </tr>
             </tbody>
         </table>
-
+  </div>
+        
+  <div id="page-2020" class="table-content hidden">
         <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
             <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
               2020
@@ -305,7 +314,9 @@
             </tr>
             </tbody>
         </table>
+  </div>
 
+  <div id="page-2019" class="table-content hidden">
         <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
             <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
               2019
@@ -521,7 +532,9 @@
             </tr>
             </tbody>
             </table>
-
+  </div>
+  
+  <div id="page-2018" class="table-content hidden">
             <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
                 <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
                   2018
@@ -695,7 +708,9 @@
             </tr>
                 </tbody>
             </table>
+    </div>
 
+  <div id="page-2017" class="table-content hidden">
             <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
                 <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
                   2017
@@ -911,7 +926,9 @@
             </tr>
                 </tbody>
             </table>
+    </div>
 
+<div id="page-2016" class="table-content hidden">
             <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
                 <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
                   2016
@@ -1197,7 +1214,9 @@
             </tr>
                 </tbody>
                 </table>
+    </div>
 
+<div id="page-2015" class="table-content hidden">
                 <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
                     <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
                       2015
@@ -1260,19 +1279,48 @@
              
         </tbody>
     </table>
-    
-    
-    
+</div>
+
   </div>
 </div>
 <!-- table end -->
 
-
-
-
-
-
-
-
-
+<!-- Pagination Component (Pagination.astro) -->
+<div class="flex justify-center space-x-2 mb-16">
+    <button class="page-button" data-page="2023">2023</button>
+    <button class="page-button" data-page="2022">2022</button>
+    <button class="page-button" data-page="2021">2021</button>
+    <button class="page-button" data-page="2020">2020</button>
+    <button class="page-button" data-page="2019">2019</button>
+    <button class="page-button" data-page="2018">2018</button>
+    <button class="page-button" data-page="2017">2017</button>
+    <button class="page-button" data-page="2016">2016</button>
+    <button class="page-button" data-page="2015">2015</button>
+    <!-- Add more buttons as needed -->
 </div>
+
+<script>
+    function showPage(page: number): void {
+      const tableContents: NodeListOf<HTMLElement> = document.querySelectorAll('.table-content');
+      tableContents.forEach(table => {
+        table.classList.add('hidden');
+      });
+    
+      const selectedTable = document.getElementById(`page-${page}`);
+      if (selectedTable) {
+        selectedTable.classList.remove('hidden');
+      }
+    }
+    
+    // Adding event listeners to pagination buttons
+    document.addEventListener('DOMContentLoaded', () => {
+      const pageButtons = document.querySelectorAll('.page-button');
+      pageButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const page = parseInt((button as HTMLElement).dataset.page as string, 10);
+          showPage(page);
+        });
+      });
+    });
+</script>
+    
