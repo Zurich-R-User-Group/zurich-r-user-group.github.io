@@ -19,6 +19,13 @@
         width: 30%; 
     }
 
+.topic-col {
+    max-width: 30%;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+    
 
 </style>
 
@@ -37,15 +44,15 @@
     <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
         <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
             <tr>
-                <th scope="col" class="px-6 py-3 w-1/12">Topic</th>
-                <th scope="col" class="px-6 py-3 w-5/12">Host</th>
-                <th scope="col" class="px-6 py-3 w-4/12">Speakers</th>
-                <th scope="col" class="px-6 py-3 w-2/12">Slides</th>
+                <th scope="col" class="px-6 py-3 topic-col">Topic</th>
+                <th scope="col" class="px-6 py-3">Host</th>
+                <th scope="col" class="px-6 py-3">Speakers</th>
+                <th scope="col" class="px-6 py-3">Slides</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td scope="row"  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row"  class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     November 2, 2023: Unveiling Market Insights with Real Estate
                 </td    >
                 <td class="px-6 py-4">
@@ -59,9 +66,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     November 2, 2023: Interpretable machine learning: applications in public health
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     University of Zurich
                 </td>
@@ -73,9 +80,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     September 11, 2023: duckplyr: Tight Integration of duckdb with R and the tidyverse
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     cynkra
                 </td>
@@ -87,9 +94,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     September 11, 2023: The best bottle is just one (or two) GAMMs away
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Zürich Data Scientists
                 </td>
@@ -124,9 +131,9 @@
             <tbody>
        
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     July 05, 2022: Detecting and analysing space-time correlations with ARCOS
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     University of Berne
                 </td>
@@ -138,9 +145,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     July 05, 2022: Exploring “The Grammar of Graphics”
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Helbling Technik
                 </td>
@@ -152,9 +159,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     April 27, 2022: Comprehensive audit of a Shiny app through CI/CD: toward production-readiness
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     RinteRface
                 </td>
@@ -166,9 +173,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     April 27, 2022: Anomaly Detection on Vote Sundays with R & Shiny
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Statistical Office of the Canton of Zurich
                 </td>
@@ -195,7 +202,7 @@
             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
                 <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
-                        <th scope="col" class="px-6 py-3">Topic</th>
+                        <th scope="col" class="px-6 py-3 topic-col">Topic</th>
                         <th scope="col" class="px-6 py-3">Host</th>
                         <th scope="col" class="px-6 py-3">Speakers</th>
                         <th scope="col" class="px-6 py-3">Slides</th>
@@ -204,9 +211,9 @@
                 <tbody>
 
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     October 27, 2021: Developing the mlr/mlr3 machine learning framework in R
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     mlr-org
                 </td>
@@ -218,9 +225,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     October 27, 2021: varycoef: An R Package for Gaussian Process-based Spatially Varying Coefficient Models
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Swiss Re
                 </td>
@@ -246,7 +253,7 @@
         <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
             <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
-                    <th scope="col" class="px-6 py-3">Topic</th>
+                    <th scope="col" class="px-6 py-3 topic-col">Topic</th>
                     <th scope="col" class="px-6 py-3">Host</th>
                     <th scope="col" class="px-6 py-3">Speakers</th>
                     <th scope="col" class="px-6 py-3">Slides</th>
@@ -257,9 +264,9 @@
 
 
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     October 29, 2020: SPARQL with R
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Statistisches Amt, Kanton Zürich
                 </td>
@@ -271,9 +278,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     January 29, 2020: From survival analysis to projecting disability payments
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     PartnerRe
                 </td>
@@ -285,9 +292,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     January 29, 2020: Data Science at UPC
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     UPC
                 </td>
@@ -299,9 +306,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     January 29, 2020: shinyMobile: mobile ready shiny apps
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Novartis
                 </td>
@@ -327,7 +334,7 @@
         <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
             <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
-                    <th scope="col" class="px-6 py-3">Topic</th>
+                    <th scope="col" class="px-6 py-3 topic-col">Topic</th>
                     <th scope="col" class="px-6 py-3">Host</th>
                     <th scope="col" class="px-6 py-3">Speakers</th>
                     <th scope="col" class="px-6 py-3">Slides</th>
@@ -335,9 +342,9 @@
             </thead>
             <tbody>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     November 13, 2019: Predicting the departing runway of a flight based on a classification tree model
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Zurich Airport
                 </td>
@@ -349,9 +356,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     November 13, 2019: NOTAM message classifier
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Swiss International Air Lines
                 </td>
@@ -363,9 +370,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     October 14, 2019: quanteda - Quantitative Analysis of Textual Data
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     UZH
                 </td>
@@ -377,9 +384,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     October 14, 2019: useR!2019 Toulouse : ZRH-PARIS-BORDEAUX-TOULOUSE
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     KOF/ETHZ
                 </td>
@@ -391,9 +398,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     September 16, 2019: Relational data models with the dm package
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     cynkra
                 </td>
@@ -405,9 +412,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     September 16, 2019: Tracking Real Estate Project Web Sites with R
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Datahouse AG
                 </td>
@@ -419,9 +426,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     June 18, 2019: Use case of reinforcement-learning exemplified by Super Mario AI
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     STATWORX
                 </td>
@@ -433,9 +440,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     June 18, 2019: Analytical Data Management with R
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     CWI, University of Amsterdam (UvA)
                 </td>
@@ -447,9 +454,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     May 22, 2019: Docker for R users
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Helbling Technik AG
                 </td>
@@ -461,9 +468,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     May 22, 2019: Toward production-ready user interfaces with the R Shiny framework
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     UZH
                 </td>
@@ -475,9 +482,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     April 03, 2019: Medical underwriting triage: An end-to-end machine learning case study
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     PartnerRe
                 </td>
@@ -489,9 +496,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     April 03, 2019: Introducing chartbookR
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     SUVA
                 </td>
@@ -503,9 +510,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     February 19, 2019: On weapons and dialects: The initial hypothesis and the final story
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     NZZ
                 </td>
@@ -517,9 +524,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     February 19, 2019: Data driven journalism at Tamedia
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Tamedia
                 </td>
@@ -545,7 +552,7 @@
             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
                 <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
-                        <th scope="col" class="px-6 py-3">Topic</th>
+                        <th scope="col" class="px-6 py-3 topic-col">Topic</th>
                         <th scope="col" class="px-6 py-3">Host</th>
                         <th scope="col" class="px-6 py-3">Speakers</th>
                         <th scope="col" class="px-6 py-3">Slides</th>
@@ -553,9 +560,9 @@
                 </thead>
                 <tbody>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     December 5, 2018: What I find important when R Programming - and Recent Cool Features in R
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     ETH Zurich
                 </td>
@@ -567,9 +574,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     October 25, 2018: A Comparison of Covariate-based Prediction Methods for FIFA World Cups
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     TU Dortmund
                 </td>
@@ -581,9 +588,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     October 25, 2018: Predicting biathlon shooting performance using machine learning
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Swiss Federal Institute of Sport Magglingen/datahouse
                 </td>
@@ -595,9 +602,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     September 3, 2018: blogdown: Creating Websites with R Markdown
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Statistical Office, Canton of Zurich
                 </td>
@@ -609,9 +616,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     September 3, 2018: DBI: Recent developments in R’s database interface
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     cynkra GmbH
                 </td>
@@ -623,9 +630,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     May 16, 2018: Micro location rating in real estate
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Wüest Partner
                 </td>
@@ -637,9 +644,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     May 16, 2018: Speeding R up on your computer by parallelized computations - a geostatistical case study
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Department of Environmental Systems Science, ETH Zurich / Statistik Stadt Zürich
                 </td>
@@ -651,9 +658,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     March 21, 2018: Long Term Protection Model
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Partner Re, BeDataDriven
                 </td>
@@ -665,9 +672,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     March 21, 2018: Social contact network analysis: static versus dynamic (time-stamped) approaches
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     University of Bern
                 </td>
@@ -679,9 +686,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     January 8, 2018: Big Data Analytics in R using sparklyr
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Mirai-Solutions
                 </td>
@@ -693,9 +700,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     January 8, 2018: Anomaly detection – database integrated
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Trivadis
                 </td>
@@ -721,17 +728,17 @@
             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
                 <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
-                        <th scope="col" class="px-6 py-3">Topic</th>
-                        <th scope="col" class="px-6 py-3">Host</th>
-                        <th scope="col" class="px-6 py-3">Speakers</th>
-                        <th scope="col" class="px-6 py-3">Slides</th>
+                        <th scope="col" class="px-6 py-3">Topic</td>
+                        <th scope="col" class="px-6 py-3">Host</td>
+                        <th scope="col" class="px-6 py-3">Speakers</td>
+                        <th scope="col" class="px-6 py-3">Slides</td>
                     </tr>
                 </thead>
                 <tbody>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     November 7, 2017: Read and process unstructured data with R
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Statistical Office, Canton of Zurich
                 </td>
@@ -743,9 +750,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     November 7, 2017: Mastering Corporate Design with R
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Statistical Office, Canton of Zurich
                 </td>
@@ -757,9 +764,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     November 7, 2017: Illustration of pupils’ diversity with R
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Zurich State Department of Education
                 </td>
@@ -771,9 +778,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     November 7, 2017: Making Public Data Public
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Christoph Sax Data Analytics
                 </td>
@@ -785,9 +792,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     September 4, 2017: Open machine learning
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Epidemiology, Biostatistics and Prevention Institute, UZH
                 </td>
@@ -799,9 +806,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     September 4, 2017: Dynamic Pricing - Analyzing rapidly-changing prices
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     datahouse
                 </td>
@@ -813,9 +820,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     September 4, 2017: R at Sanitas – Workflow, Problems and Solutions
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Sanitas
                 </td>
@@ -827,9 +834,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     May 3, 2017: Visualizing the frequency of delays using QGIS and the Leaflet javascript library in R
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     N/A
                 </td>
@@ -841,9 +848,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     May 3, 2017: Modelling Bus Bunching
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     N/A
                 </td>
@@ -855,9 +862,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     May 3, 2017: How we organized the Hackathon
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     N/A
                 </td>
@@ -869,9 +876,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     April 10, 2017: Slides and tutorial
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     ETHZ/datatools GmbH
                 </td>
@@ -883,9 +890,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     February 6, 2017: Introduction to Renjin, the alternative engine for R
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     BeDataDriven
                 </td>
@@ -897,9 +904,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     February 6, 2017: R, y u do dis?
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     N/A
                 </td>
@@ -911,9 +918,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     February 6, 2017: Scraping Interactive Graphs with Selenium
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Swiss International Air Lines
                 </td>
@@ -939,17 +946,17 @@
             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
                 <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
-                        <th scope="col" class="px-6 py-3">Topic</th>
-                        <th scope="col" class="px-6 py-3">Host</th>
-                        <th scope="col" class="px-6 py-3">Speakers</th>
-                        <th scope="col" class="px-6 py-3">Slides</th>
+                        <th scope="col" class="px-6 py-3">Topic</td>
+                        <th scope="col" class="px-6 py-3">Host</td>
+                        <th scope="col" class="px-6 py-3">Speakers</td>
+                        <th scope="col" class="px-6 py-3">Slides</td>
                     </tr>
                 </thead>
                 <tbody>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     November 29, 2016: Make it simpleR!
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     UBS
                 </td>
@@ -961,9 +968,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     November 29, 2016: R in Finance: Using R in a productive and highly regulated environment
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Mirai Solutions
                 </td>
@@ -975,9 +982,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     November 29, 2016: R for Car Insurance Product
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     N/A
                 </td>
@@ -989,9 +996,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     November 29, 2016: Using Shiny for worldwide climate monitoring
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     CelsiusPro
                 </td>
@@ -1003,9 +1010,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     September 29, 2016: Fast Prototyping in R - a brief Introduction to R Shiny
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Zühlke
                 </td>
@@ -1017,9 +1024,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     September 29, 2016: Clean, code, analyze and visualize election data in R: An example from datajournalism
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     NZZ
                 </td>
@@ -1031,9 +1038,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     August 4, 2016: Analyzing the Bührer family data set using an advanced mosaic plot.
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     ZHAW
                 </td>
@@ -1045,9 +1052,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     August 4, 2016: Mapping health during travel: a visualization of a trip through Thailand.
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     UZH
                 </td>
@@ -1059,9 +1066,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     August 4, 2016: Interactive Javascript in R with rCharts
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Centralway
                 </td>
@@ -1073,9 +1080,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     August 4, 2016: Animation of political shifts in elections
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     SRF
                 </td>
@@ -1087,9 +1094,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     August 4, 2016: An interactive map with R-Shiny and leaflet
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Migros
                 </td>
@@ -1101,9 +1108,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     August 4, 2016: Federal election 2015 : visualizing the panachage-statistics
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Statistical Office Zurich
                 </td>
@@ -1115,9 +1122,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     August 4, 2016: Crosstalk
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     eBay
                 </td>
@@ -1129,9 +1136,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     May 23, 2016: Microsoft R Server
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Microsoft
                 </td>
@@ -1143,9 +1150,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     May 23, 2016: Automated reports at OrganizationView
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     OrganizationView
                 </td>
@@ -1157,9 +1164,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     March 16, 2016: Data journalism
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     SRF
                 </td>
@@ -1171,9 +1178,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     March 16, 2016: Open Data Zurich
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Open Data Zurich
                 </td>
@@ -1185,9 +1192,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     January 21, 2016: Speeding up (big) data manipulation with the data.table package
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Zurich University of Applied Sciences, Institute for Data Analysis and Process Design
                 </td>
@@ -1199,9 +1206,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     January 21, 2016: DescTools - Tools for Descriptive Statistics and Exploratory Data Analysis
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     Helsana/HWZ
                 </td>
@@ -1227,7 +1234,7 @@
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-6 py-3">Topic</th>
+                            <th scope="col" class="px-6 py-3 topic-col">Topic</th>
                             <th scope="col" class="px-6 py-3">Host</th>
                             <th scope="col" class="px-6 py-3">Speakers</th>
                             <th scope="col" class="px-6 py-3">Slides</th>
@@ -1235,9 +1242,9 @@
                     </thead>
                     <tbody>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     December 7, 2015: Shiny: Make Your R Code Interactive
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     ETH
                 </td>
@@ -1249,9 +1256,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     December 7, 2015: Exploring knitr
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     UZH
                 </td>
@@ -1263,9 +1270,9 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     December 7, 2015: Improving computational performance with algorithm engineering
-                </th>
+                </td>
                 <td class="px-6 py-4">
                     ETH
                 </td>
@@ -1285,7 +1292,7 @@
 </div>
 <!-- table end -->
 
-<!-- Pagination Component (Pagination.astro) -->
+
 <div class="flex justify-center space-x-2 mb-16">
     <button class="page-button" data-page="2023">2023</button>
     <button class="page-button" data-page="2022">2022</button>
