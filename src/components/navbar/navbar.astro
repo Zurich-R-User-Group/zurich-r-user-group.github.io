@@ -1,52 +1,39 @@
 ---
 import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon/components";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
-  // {
-  //   title: "Features",
-  //   path: "#",
-  //   children: [
-  //     { title: "Action", path: "/" },
-  //     { title: "Another action", path: "#" },
-  //     { title: "Dropdown Submenu", path: "#" },
-  //     { title: "404 Page", path: "/404" },
-  //   ],
-  // },
-  // {
-  //   title: "Pricing",
-  //   path: "/pricing",
-  // },
-  {
-    title: "blog",
-    path: "/blog",
-  },
   {
     title: "Give a Talk",
-    path: "#talk",
+    path: "/talk",
   },
   {
     title: "Host a Meetup",
     path: "/host",
   },
-  
-  // {
-  //   title: "Pro Version",
-  //   badge: true,
-  //   path: "https://astroship-pro.web3templates.com/",
-  // },
+  {
+    title: "Blog",
+    path: "/blog",
+  },
 ];
 ---
+
+<style>
+  .zueri{
+    color: #0070b4;
+  }
+</style>
 
 <Container>
   <header class="flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800"> Zurich R User </span>
-          <span class="text-slate-500">Group</span>
+        <a href="/" class="text-lg">
+          <span class="font-bold text-slate-800"> Zurich R User </span>
+          <span class="text-slate-600 zueri">Group</span>
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
@@ -92,7 +79,9 @@ const menuitems = [
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <a href="https://github.com/zurich-r-user-group"><img class="h-7 md:h-7" alt="Zurich R User Group on GitHub" src="/src/assets/github-mark.svg" /></a>
+        <a href="https://github.com/zurich-r-user-group"><Icon class="text-black" name="simple-icons:bluesky" /></a>
+        <a href="https://github.com/zurich-r-user-group"><Icon class="text-black" name="bx:bxl-linkedin" /></a>
+        <a href="https://github.com/zurich-r-user-group"><Icon class="text-black" name="simple-icons:github" /></a>
       </div>
     </div>
   </header>
