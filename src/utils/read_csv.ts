@@ -7,6 +7,7 @@ type Event = {
   Host: string;
   Speakers: string;
   Slides: string;
+  year: number;
 };
 
 const file = fs.readFileSync('./public/events.csv', 'utf8');
@@ -19,8 +20,3 @@ const parsed = Papa.parse<Event>(file, {
 });
 
 export const { data } = parsed;
-
-console.log(data.length); 
-console.log(data[0]?.['Host']); 
-console.log(data[0]?.['Speakers']); 
-console.log(typeof data[1]?.Speakers); 
