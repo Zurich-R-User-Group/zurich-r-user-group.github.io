@@ -1,76 +1,82 @@
-"Topic","Host","Speakers","Slides","year"
-"November 2: Unveiling Market Insights with Real Estate","Datahouse","Andreas Thürlimann","Unveiling Market Insights with Real Estate","2023"
-"November 2: Interpretable machine learning: applications in public health","University of Zurich","Andrea Farnham","Interpretable machine learning: applications in public health","2023"
-"September 11: duckplyr: Tight Integration of duckdb with R and the tidyverse","cynkra","Kirill Müller","N/A","2023"
-"September 11: The best bottle is just one (or two) GAMMs away","Zürich Data Scientists","Luisa Barbanti, Matteo Tanadini","N/A","2023"
-"July 05: Detecting and analysing space-time correlations with ARCOS","University of Berne","Maciej Dobrzyński","N/A","2022"
-"July 05: Exploring “The Grammar of Graphics”","Helbling Technik","Lynda Metref","N/A","2022"
-"April 27: Comprehensive audit of a Shiny app through CI/CD: toward production-readiness","RinteRface","David Granjon","N/A","2022"
-"April 27: Anomaly Detection on Vote Sundays with R & Shiny","Statistical Office of the Canton of Zurich","Thomas Lo Russo","N/A","2022"
-"October 27: Developing the mlr/mlr3 machine learning framework in R","mlr-org","Patrick Schratz","N/A","2021"
-"October 27: varycoef: An R Package for Gaussian Process-based Spatially Varying Coefficient Models","Swiss Re","Jakob Dambon","N/A","2021"
-"October 29: SPARQL with R","Statistisches Amt, Kanton Zürich","Katharina Kaelin","SPARQL with R","2020"
-"January 29: From survival analysis to projecting disability payments","PartnerRe","Benjamin Abt, Simon Adamov","From survival analysis to projecting disability payments","2020"
-"January 29: Data Science at UPC","UPC","Felix Reisen","N/A","2020"
-"January 29: shinyMobile: mobile ready shiny apps","Novartis","David Granjon","shinyMobile: mobile ready shiny apps","2020"
-"November 13: Predicting the departing runway of a flight based on a classification tree model","Zurich Airport","Benjamin Perucco","Predicting the departing runway of a flight based on a classification tree model","2019"
-"November 13: NOTAM message classifier","Swiss International Air Lines","Joao Banha","NOTAM message classifier","2019"
-"October 14: quanteda - Quantitative Analysis of Textual Data","UZH","Stefan Müller","quanteda - Quantitative Analysis of Textual Data","2019"
-"October 14: useR!2019 Toulouse : ZRH-PARIS-BORDEAUX-TOULOUSE","KOF/ETHZ","Matthias Bannert","useR!2019 Toulouse : ZRH-PARIS-BORDEAUX-TOULOUSE","2019"
-"September 16: Relational data models with the dm package","cynkra","Kirill Müller","R script, package website","2019"
-"September 16: Tracking Real Estate Project Web Sites with R","Datahouse AG","Thomas Maier","Tracking Real Estate Project Web Sites with R","2019"
-"June 18: Use case of reinforcement-learning exemplified by Super Mario AI","STATWORX","Sebastian Heinz, Oliver Guggenbühl","Use case of reinforcement-learning exemplified by Super Mario AI","2019"
-"June 18: Analytical Data Management with R","CWI, University of Amsterdam (UvA)","Hannes Mühleisen","Analytical Data Management with R","2019"
-"May 22: Docker for R users","Helbling Technik AG","Lynda Metref","Docker for R users","2019"
-"May 22: Toward production-ready user interfaces with the R Shiny framework","UZH","David Granjon","Toward production-ready user interfaces with the R Shiny framework","2019"
-"April 03: Medical underwriting triage: An end-to-end machine learning case study","PartnerRe","Alexander Noll","N/A","2019"
-"April 03: Introducing chartbookR","SUVA","Kilian Reber","Introducing chartbookR","2019"
-"February 19: On weapons and dialects: The initial hypothesis and the final story","NZZ","Marie-José Kolly","On weapons and dialects: The initial hypothesis and the final story","2019"
-"February 19: Data driven journalism at Tamedia","Tamedia","Patrick Meier","Data driven journalism at Tamedia","2019"
-"December 5: What I find important when R Programming - and Recent Cool Features in R","ETH Zurich","Dr. Martin Mächler","What I find important when R Programming - and Recent Cool Features in R","2018"
-"October 25: A Comparison of Covariate-based Prediction Methods for FIFA World Cups","TU Dortmund","Andreas Groll","A Comparison of Covariate-based Prediction Methods for FIFA World Cups","2018"
-"October 25: Predicting biathlon shooting performance using machine learning","Swiss Federal Institute of Sport Magglingen/datahouse","Thomas Maier","Predicting biathlon shooting performance using machine learning","2018"
-"September 3: blogdown: Creating Websites with R Markdown","Statistical Office, Canton of Zurich","Thomas Lo Russo","blogdown: Creating Websites with R Markdown","2018"
-"September 3: DBI: Recent developments in R’s database interface","cynkra GmbH","Kirill Müller","DBI: Recent developments in R’s database interface","2018"
-"May 16: Micro location rating in real estate","Wüest Partner","Jacqueline Schweizer","Micro location rating in real estate","2018"
-"May 16: Speeding R up on your computer by parallelized computations - a geostatistical case study","Department of Environmental Systems Science, ETH Zurich / Statistik Stadt Zürich","Andreas Papritz","Speeding R up on your computer by parallelized computations - a geostatistical case study","2018"
-"March 21: Long Term Protection Model","Partner Re, BeDataDriven","Alexis Iglauer, Maarten-Jan Kallen, Dr. Urszula Gasser","Long Term Protection Model","2018"
-"March 21: Social contact network analysis: static versus dynamic (time-stamped) approaches","University of Bern","Beatriz Vidondo","N/A","2018"
-"January 8: Big Data Analytics in R using sparklyr","Mirai-Solutions","Nicola Lambiase","Big Data Analytics in R using sparklyr","2018"
-"January 8: Anomaly detection – database integrated","Trivadis","Olaf Nimz","Anomaly detection – database integrated","2018"
-"November 7: Read and process unstructured data with R","Statistical Office, Canton of Zurich","Max Grütter","Read and process unstructured data with R","2017"
-"November 7: Mastering Corporate Design with R","Statistical Office, Canton of Zurich","Andrea Schnell, Thomas Lo Russo","Mastering Corporate Design with R","2017"
-"November 7: Illustration of pupils’ diversity with R","Zurich State Department of Education","Flavian Imlig","Illustration of pupils’ diversity with R","2017"
-"November 7: Making Public Data Public","Christoph Sax Data Analytics","Christoph Sax","Making Public Data Public","2017"
-"September 4: Open machine learning","Epidemiology, Biostatistics and Prevention Institute, UZH","Heidi Seibold","Open machine learning","2017"
-"September 4: Dynamic Pricing - Analyzing rapidly-changing prices","datahouse","Daniel Meister","Dynamic Pricing - Analyzing rapidly-changing prices","2017"
-"September 4: R at Sanitas – Workflow, Problems and Solutions","Sanitas","Patrik Lengacher","R at Sanitas – Workflow, Problems and Solutions","2017"
-"May 3: Visualizing the frequency of delays using QGIS and the Leaflet javascript library in R","N/A","Peter B. Pearman, Thomas Roth","Visualizing the frequency of delays using QGIS and the Leaflet javascript library in R","2017"
-"May 3: Modelling Bus Bunching","N/A","Andrea Farnham","Modelling Bus Bunching","2017"
-"May 3: How we organized the Hackathon","N/A","Heidi Seibold","N/A","2017"
-"April 10: Slides and tutorial","ETHZ/datatools GmbH","Kirill Müller","Slides, tutorial","2017"
-"February 6: Introduction to Renjin, the alternative engine for R","BeDataDriven","Maarten-Jan Kallen","Introduction to Renjin, the alternative engine for R","2017"
-"February 6: R, y u do dis?","N/A","Christoph Molnar","R, y u do dis?","2017"
-"February 6: Scraping Interactive Graphs with Selenium","Swiss International Air Lines","Kushtrim Veseli","Code","2017"
-"November 29: Make it simpleR!","UBS","Raymond Zychowicz","N/A","2016"
-"November 29: R in Finance: Using R in a productive and highly regulated environment","Mirai Solutions","Gabriel Foix","R in Finance: Using R in a productive and highly regulated environment","2016"
-"November 29: R for Car Insurance Product","N/A","Claudio Giancaterino","R for Car Insurance Product","2016"
-"November 29: Using Shiny for worldwide climate monitoring","CelsiusPro","David Masson","N/A","2016"
-"September 29: Fast Prototyping in R - a brief Introduction to R Shiny","Zühlke","Nadja Ulrich","Fast Prototyping in R - a brief Introduction to R Shiny, Code","2016"
-"September 29: Clean, code, analyze and visualize election data in R: An example from datajournalism","NZZ","Marie-José Kolly, Marvin Milatz","Clean, code, analyze and visualize election data in R: An example from datajournalism","2016"
-"August 4: Analyzing the Bührer family data set using an advanced mosaic plot.","ZHAW","Thomas Roth","Analyzing the Bührer family data set using an advanced mosaic plot.","2016"
-"August 4: Mapping health during travel: a visualization of a trip through Thailand.","UZH","Andrea Farnham","Mapping health during travel: a visualization of a trip through Thailand.","2016"
-"August 4: Interactive Javascript in R with rCharts","Centralway","Matteo Casserini","Interactive Javascript in R with rCharts","2016"
-"August 4: Animation of political shifts in elections","SRF","Timo Grossenbacher","Animation of political shifts in elections","2016"
-"August 4: An interactive map with R-Shiny and leaflet","Migros","Bojan Škerlak","An interactive map with R-Shiny and leaflet","2016"
-"August 4: Federal election 2015 : visualizing the panachage-statistics","Statistical Office Zurich","Thomas Lo Russo","Federal election 2015 : visualizing the panachage-statistics","2016"
-"August 4: Crosstalk","eBay","Dimitris Psaradellis","Crosstalk","2016"
-"May 23: Microsoft R Server","Microsoft","Marc Schöni","Microsoft R Server","2016"
-"May 23: Automated reports at OrganizationView","OrganizationView","Andrew Marritt","Automated reports at OrganizationView","2016"
-"March 16: Data journalism","SRF","Timo Grossenbacher","Data journalism","2016"
-"March 16: Open Data Zurich","Open Data Zurich","Marco Sieber, Fidel Thomet","Open Data Zurich","2016"
-"January 21: Speeding up (big) data manipulation with the data.table package","Zurich University of Applied Sciences, Institute for Data Analysis and Process Design","Vasily Tolkachev","Speeding up (big) data manipulation with the data.table package","2016"
-"January 21: DescTools - Tools for Descriptive Statistics and Exploratory Data Analysis","Helsana/HWZ","Andri Signorell","DescTools - Tools for Descriptive Statistics and Exploratory Data Analysis","2016"
-"December 7: Shiny: Make Your R Code Interactive","ETH","Craig Wang","Shiny: Make Your R Code Interactive","2015"
-"December 7: Exploring knitr","UZH","Isaac Gravestock","N/A","2015"
-"December 7: Improving computational performance with algorithm engineering","ETH","Kirill Müller","Improving computational performance with algorithm engineering","2015"
+Topic,Host,Speakers,Slides,year
+September 19: R for Real Estate and Machine Learning Model Summaries,Wüest Partner AG,Simon Stehle,,2024
+"September 19: Concise, Comprehensive, and Customizable Summaries for Machine Learning Models",University of Zurich,Susanne Dandl,,2024
+June 04: Antibiotic packages and guideline recommendations. A real-world analysis based on claims data.,Helsana Insurance Group,Sereina M. Graber,/slides/20240604_Antibiotics_Graber.html,2024
+June 04: Changes in the use of hydrochlorothiazide and other antihypertensive drugs in Switzerland in association with the Swissmedic safety alert regarding skin cancer: An interrupted-time series analysis using Swiss claims data.,University of Basel,Tamino Zappalà,/slides/20240604_DHPC_Zappala.pdf,2024
+April 08: Linking Register Data: Navigating Opportunities and Limitations,"Statistical Office, Canton of Zurich",Irene Böckmann,,2024
+"April 08: Implementation of a national project and challenges of coordinating a multi-center, multi language project","Clinical Trial Unit, Kantonsspital St. Gallen",Erin West,,2024
+November 2: Unveiling Market Insights with Real Estate,Datahouse,Andreas Thürlimann,/slides/20231102_Thuerlimann.pdf,2023
+November 2: Interpretable machine learning: applications in public health,University of Zurich,Andrea Farnham,/slides/20231102_Farnham.pdf,2023
+September 11: duckplyr: Tight Integration of duckdb with R and the tidyverse,cynkra,Kirill Müller,,2023
+September 11: The best bottle is just one (or two) GAMMs away,Zürich Data Scientists,"Luisa Barbanti, Matteo Tanadini",,2023
+July 05: Detecting and analysing space-time correlations with ARCOS,University of Berne,Maciej Dobrzyński,,2022
+July 05: Exploring “The Grammar of Graphics”,Helbling Technik,Lynda Metref,,2022
+April 27: Comprehensive audit of a Shiny app through CI/CD: toward production-readiness,RinteRface,David Granjon,,2022
+April 27: Anomaly Detection on Vote Sundays with R & Shiny,Statistical Office of the Canton of Zurich,Thomas Lo Russo,,2022
+October 27: Developing the mlr/mlr3 machine learning framework in R,mlr-org,Patrick Schratz,,2021
+October 27: varycoef: An R Package for Gaussian Process-based Spatially Varying Coefficient Models,Swiss Re,Jakob Dambon,,2021
+October 29: SPARQL with R,"Statistisches Amt, Kanton Zürich",Katharina Kaelin,https://github.com/statistikZH/SPARQL_WITH_R,2020
+January 29: From survival analysis to projecting disability payments,PartnerRe,"Benjamin Abt, Simon Adamov",/slides/20200129_PartnerRe.pdf,2020
+January 29: Data Science at UPC,UPC,Felix Reisen,,2020
+January 29: shinyMobile: mobile ready shiny apps,Novartis,David Granjon,,2020
+November 13: Predicting the departing runway of a flight based on a classification tree model,Zurich Airport,Benjamin Perucco,/slides/20191113_Perucco.pdf,2019
+November 13: NOTAM message classifier,Swiss International Air Lines,Joao Banha,/slides/20191113_Banha.pdf,2019
+October 14: quanteda - Quantitative Analysis of Textual Data,UZH,Stefan Müller,/slides/20191014_quanteda.pdf,2019
+October 14: useR!2019 Toulouse : ZRH-PARIS-BORDEAUX-TOULOUSE,KOF/ETHZ,Matthias Bannert,,2019
+September 16: Relational data models with the dm package,cynkra,Kirill Müller,https://github.com/cynkra/dm/blob/main/demo/zurich.R,2019
+September 16: Tracking Real Estate Project Web Sites with R,Datahouse AG,Thomas Maier,/slides/20190916_Pres_Datahouse_Crawling.pdf,2019
+June 18: Use case of reinforcement-learning exemplified by Super Mario AI,STATWORX,"Sebastian Heinz, Oliver Guggenbühl",/slides/20190618_reinforcelearn.pdf,2019
+June 18: Analytical Data Management with R,"CWI, University of Amsterdam (UvA)",Hannes Mühleisen,/slides/20190618_duckdb.pdf,2019
+May 22: Docker for R users,Helbling Technik AG,Lynda Metref,https://lyndametref.github.io/docker4r-presentation/docs/#1,2019
+May 22: Toward production-ready user interfaces with the R Shiny framework,UZH,David Granjon,,2019
+April 03: Medical underwriting triage: An end-to-end machine learning case study,PartnerRe,Alexander Noll,,2019
+April 03: Introducing chartbookR,SUVA,Kilian Reber,/slides/20190403_Reber_chartbookR.pdf,2019
+February 19: On weapons and dialects: The initial hypothesis and the final story,NZZ,Marie-José Kolly,/slides/20190219_talkMJK.pdf,2019
+February 19: Data driven journalism at Tamedia,Tamedia,Patrick Meier,https://docs.google.com/presentation/d/1wWc-yjw33mIA8SrOQd16OoIID54L0wU5mNV4410RxKk/edit#slide=id.g190c2b510c_3_252,2019
+December 5: What I find important when R Programming - and Recent Cool Features in R,ETH Zurich,Dr. Martin Mächler,https://people.math.ethz.ch/~maechler/U/R/Zurich_R-2018_ProgR-ALTREP.html#1,2018
+October 25: A Comparison of Covariate-based Prediction Methods for FIFA World Cups,TU Dortmund,Andreas Groll,/slides/20181025_useR_predicting_FIFA_groll.pdf,2018
+October 25: Predicting biathlon shooting performance using machine learning,Swiss Federal Institute of Sport Magglingen/datahouse,Thomas Maier,/slides/20181025_useR_predicting_biathlon_maier.pdf,2018
+September 3: blogdown: Creating Websites with R Markdown,"Statistical Office, Canton of Zurich",Thomas Lo Russo,/slides/20180903_blogdown_rmeetup_tlorusso.pdf,2018
+September 3: DBI: Recent developments in R’s database interface,cynkra GmbH,Kirill Müller,https://krlmlr.github.io/dbi-slides/2018-09-zurich-meetup/#1,2018
+May 16: Micro location rating in real estate,Wüest Partner,Jacqueline Schweizer,/slides/20180516_Pres_Schweizer.pdf,2018
+May 16: Speeding R up on your computer by parallelized computations - a geostatistical case study,"Department of Environmental Systems Science, ETH Zurich / Statistik Stadt Zürich",Andreas Papritz,/slides/20180516_Pres_Papritz.pdf,2018
+March 21: Long Term Protection Model,"Partner Re, BeDataDriven","Alexis Iglauer, Maarten-Jan Kallen, Dr. Urszula Gasser",/slides/20180321_LTPM-in-R.pdf,2018
+March 21: Social contact network analysis: static versus dynamic (time-stamped) approaches,University of Bern,Beatriz Vidondo,,2018
+January 8: Big Data Analytics in R using sparklyr,Mirai-Solutions,Nicola Lambiase,https://de.slideshare.net/slideshow/big-data-analytics-in-r-using-sparklyr/85901606,2018
+January 8: Anomaly detection – database integrated,Trivadis,Olaf Nimz,https://de.slideshare.net/slideshow/anomaly-detection-database-integrated/90773021,2018
+November 7: Read and process unstructured data with R,"Statistical Office, Canton of Zurich",Max Grütter,https://github.com/statistikZH/RMeetup/blob/master/unstructered_data.pdf,2017
+November 7: Mastering Corporate Design with R,"Statistical Office, Canton of Zurich","Andrea Schnell, Thomas Lo Russo",https://schnllr.github.io/Meetup/#1,2017
+November 7: Illustration of pupils’ diversity with R,Zurich State Department of Education,Flavian Imlig,,2017
+November 7: Making Public Data Public,Christoph Sax Data Analytics,Christoph Sax,http://www.christophsax.com/slides/171107-meetup/slides.html#1,2017
+September 4: Open machine learning,"Epidemiology, Biostatistics and Prevention Institute, UZH",Heidi Seibold,https://openml.github.io/articles/slides/talk_cenisbs_2017/OpenML_CENISBS.html#1,2017
+September 4: Dynamic Pricing - Analyzing rapidly-changing prices,datahouse,Daniel Meister,,2017
+"September 4: R at Sanitas – Workflow, Problems and Solutions",Sanitas,Patrik Lengacher,https://de.slideshare.net/slideshow/r-at-sanitas-workflow-problems-and-solutions/90772064,2017
+May 3: Visualizing the frequency of delays using QGIS and the Leaflet javascript library in R,N/A,"Peter B. Pearman, Thomas Roth",https://de.slideshare.net/slideshow/visualizing-the-frequency-of-transit-delays-using-qgis-and-the-leaflet-javascript-library-in-r/75956655,2017
+May 3: Modelling Bus Bunching,N/A,Andrea Farnham,https://de.slideshare.net/slideshow/modeling-bus-bunching/75956675,2017
+May 3: How we organized the Hackathon,N/A,Heidi Seibold,,2017
+April 10: Slides and tutorial,ETHZ/datatools GmbH,Kirill Müller,https://github.com/krlmlr/remake-slides,2017
+"February 6: Introduction to Renjin, the alternative engine for R",BeDataDriven,Maarten-Jan Kallen,https://de.slideshare.net/slideshow/introduction-to-renjin-the-alternative-engine-for-r/72321517,2017
+"February 6: R, y u do dis?",N/A,Christoph Molnar,https://github.com/christophM/r-y-u-do-dis/blob/master/presentation.Rmd,2017
+February 6: Scraping Interactive Graphs with Selenium,Swiss International Air Lines,Kushtrim Veseli,https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides-code/538_polls_all.R,2017
+November 29: Make it simpleR!,UBS,Raymond Zychowicz,,2016
+November 29: R in Finance: Using R in a productive and highly regulated environment,Mirai Solutions,Gabriel Foix,https://de.slideshare.net/slideshow/rinfinancegabrielfoix/69713063,2016
+November 29: R for Car Insurance Product,N/A,Claudio Giancaterino,https://de.slideshare.net/slideshow/how-to-use-r-in-different-professions-r-for-car-insurance-product-speaker-claudio-giancaterino/69713113,2016
+November 29: Using Shiny for worldwide climate monitoring,CelsiusPro,David Masson,,2016
+September 29: Fast Prototyping in R - a brief Introduction to R Shiny,Zühlke,Nadja Ulrich,https://htmlpreview.github.io/?https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation.html#/,2016
+"September 29: Clean, code, analyze and visualize election data in R: An example from datajournalism",NZZ,"Marie-José Kolly, Marvin Milatz",https://de.slideshare.net/slideshow/where-south-america-is-swinging-to-the-right-an-rdriven-data-journalism-project-from-neue-zrcher-zeitung/66735075,2016
+August 4: Analyzing the Bührer family data set using an advanced mosaic plot.,ZHAW,Thomas Roth,https://de.slideshare.net/slideshow/analyzing-the-bhrer-family-data-set-using-an-advanced-mosaic-plot/64776211,2016
+August 4: Mapping health during travel: a visualization of a trip through Thailand.,UZH,Andrea Farnham,https://de.slideshare.net/slideshow/visualization-challenge-mapping-health-during-travel/64809303,2016
+August 4: Interactive Javascript in R with rCharts,Centralway,Matteo Casserini,https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/slides/matteo-rcharts/index.html,2016
+August 4: Animation of political shifts in elections,SRF,Timo Grossenbacher,https://github.com/srfdata/2015-09-elections-political-shifts/blob/master/analysis/main.Rmd,2016
+August 4: An interactive map with R-Shiny and leaflet,Migros,Bojan Škerlak,https://de.slideshare.net/slideshow/an-interactive-map-with-rshiny-and-leaflet/64776313,2016
+August 4: Federal election 2015 : visualizing the panachage-statistics,Statistical Office Zurich,Thomas Lo Russo,,2016
+August 4: Crosstalk,eBay,Dimitris Psaradellis,https://raw.githubusercontent.com/dimitris1ps/zurichRMeetup/master/meetup.rmd,2016
+May 23: Microsoft R Server,Microsoft,Marc Schöni,,2016
+May 23: Automated reports at OrganizationView,OrganizationView,Andrew Marritt,https://de.slideshare.net/slideshow/zurich-r-user-group-presentation-may-2016/62328345,2016
+March 16: Data journalism,SRF,Timo Grossenbacher,https://grssnbchr.github.io/zrug-rddj/#/slide-1,2016
+March 16: Open Data Zurich,Open Data Zurich,"Marco Sieber, Fidel Thomet",https://de.slideshare.net/Opendatazurich/open-data-lt3-r,2016
+January 21: Speeding up (big) data manipulation with the data.table package,"Zurich University of Applied Sciences, Institute for Data Analysis and Process Design",Vasily Tolkachev,https://de.slideshare.net/slideshow/speeding-up-big-data-manipulation-with-datatable-package/57405655,2016
+January 21: DescTools - Tools for Descriptive Statistics and Exploratory Data Analysis,Helsana/HWZ,Andri Signorell,https://de.slideshare.net/Zurich_R_User_Group/zurich-r-user-group-desc-tools,2016
+December 7: Shiny: Make Your R Code Interactive,ETH,Craig Wang,https://de.slideshare.net/slideshow/december-2015-meetup-shiny-make-your-r-code-interactive-craig-wang/55922735,2015
+December 7: Exploring knitr,UZH,Isaac Gravestock,,2015
+December 7: Improving computational performance with algorithm engineering,ETH,Kirill Müller,https://krlmlr-user15.github.io/presentation/#1,2015

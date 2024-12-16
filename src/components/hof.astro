@@ -2,6 +2,7 @@
 import {data} from '../utils/read_csv.ts';
 import EventRows from '@components/events.astro'
 
+const data_2024 = data.filter(meetup => meetup.year === 2024);
 const data_2023 = data.filter(meetup => meetup.year === 2023);
 const data_2022 = data.filter(meetup => meetup.year === 2022);
 const data_2021 = data.filter(meetup => meetup.year === 2021);
@@ -48,10 +49,40 @@ const data_2015 = data.filter(meetup => meetup.year === 2015);
   <!-- tables start -->
   <div class="relative overflow-x-auto">
 
-  <div id="page-2023" class="table-content">
+  <div id="page-2024" class="table-content">
     <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
         <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-          Past Events 2023
+          Past Events 2024
+        </h2>
+      </div> 
+    <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3 topic-col">Topic</th>
+                <th scope="col" class="px-6 py-3">Host</th>
+                <th scope="col" class="px-6 py-3">Speakers</th>
+                <th scope="col" class="px-6 py-3">Slides</th>
+            </tr>
+        </thead>
+        <tbody>
+            {
+                data_2024.map((Event) => (
+                    <EventRows
+                     Topic = {Event.Topic}
+                     Host = {Event.Host}
+                     Speakers = {Event.Speakers}
+                     Slides = {Event.Slides} 
+                     />
+                ))
+            }
+           </tbody>
+    </table>
+</div>
+
+<div id="page-2023" class="hidden table-content">
+    <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+          2023
         </h2>
       </div> 
     <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
@@ -329,6 +360,7 @@ const data_2015 = data.filter(meetup => meetup.year === 2015);
 
 
 <div class="flex justify-center space-x-2 mb-16">
+    <button class="page-button" data-page="2024">2024</button>
     <button class="page-button" data-page="2023">2023</button>
     <button class="page-button" data-page="2022">2022</button>
     <button class="page-button" data-page="2021">2021</button>

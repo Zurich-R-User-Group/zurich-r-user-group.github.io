@@ -18,7 +18,11 @@ export interface Props {
   <td class="px-6 py-4">{Host}</td>
   <td class="px-6 py-4">{Speakers}</td>
   <td class="px-6 py-4">
-    <a href="">Download</a>
+    {Slides ? (
+      <a href={Slides} target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Download</a>
+    ) : (
+      <span class="text-gray-400">Not available</span>
+    )}
   </td>
 </tr>
 
