@@ -11,10 +11,17 @@ export interface Props {
 
 ---
 
+<style>
+.topic-col {
+  max-width: 30%;
+  word-wrap: break-word;
+  white-space: normal;
+}
+</style>
 
 
 <tr>
-  <td scope="row" class="topic-col px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{Topic}</td>
+  <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white topic-col">{Topic}</td>
   <td class="px-6 py-4">{Host}</td>
   <td class="px-6 py-4">{Speakers}</td>
   <td class="px-6 py-4">
