@@ -1,17 +1,16 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
+import { Icon } from "astro-icon/components";
 
 ---
 
 
 
-<Layout title="Talk">
+<Layout title="Give a Talk">
     <Container>
-      
+      <main class="w-3/4 pt-16 pb-8 md:pt-12 md:pb-6">
 
-      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16 mb-16">
         <h2 class="font-bold text-6xl text-gray-800">
           Share Your Knowledge.
         </h2>
@@ -25,85 +24,126 @@ import Container from "@components/container.astro";
           Do you have a passion for R? A project you’re proud of? Insights into the latest tech trends? Whether you're a seasoned speaker or a first-timer, our meetup group is the perfect platform to share your ideas, grow your skills, and connect with fellow R enthusiasts.
         </p>
 
-        <img src="public/shoutout.svg" width="150">
-        <img src="public/thinking.svg" width="150">
-        <img src="public/bulb.svg" width="150">
-        <img src="public/coldfeet.svg" width="150">
+        <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24">
+          <div class="place-self-center">
+              <img src="public/shoutout.svg" width="200">
+          </div>
+          <div class="place-self-center">
+            <h2 class="text-2xl lg:text-2xl font-bold lg:tracking-tight">
+              Why Submit?
+            </h2>
+            <p class="mb-6 leading-relaxed text-slate-500">
+              Gain visibility among peers, employers, and potential collaborators.
+              Practice public speaking in a supportive and welcoming environment.
+            </p>
+            <ul>
+              <li class="flex items-center gap-3 text-neutral-800">
+                <Icon class="text-black" name="simple-icons:checkmarx" />
+                Build your reputation
+              </li>
+              <li class="flex items-center gap-3 text-neutral-800">
+                <Icon class="text-black" name="simple-icons:checkmarx" />
+                Boost your career
+              </li>
+              <li class="flex items-center gap-3 text-neutral-800">
+                <Icon class="text-black" name="simple-icons:checkmarx" />
+                Hone your skills
+              </li>
+              <li class="flex items-center gap-3 text-neutral-800">
+                <Icon class="text-black" name="simple-icons:checkmarx" />
+                Get expert feedback 
+              </li>
+              
+            </ul>
+          </div>
 
-        Why you should submit
-        
-        Build Your Reputation: establish yourself as a thought leader in the R community.
+          <div class="place-self-center">
+            <h2 class="text-2xl lg:text-2xl font-bold lg:tracking-tight">
+              Still Mulling Over Submission?
+            </h2>
+            <p class="mb-6 leading-relaxed text-slate-500">
+              Give back to the community and inspire others by sharing your knowledge.
+              Get featured on our blog for even greater visibility and impact. 
+            </p>
+          </div>
+          <div class="place-self-center">
+            <img src="public/thinking.svg" width="130">
+        </div>
 
-Boost Your Career: gain visibility among peers, employers, and potential collaborators.
-
-Hone Your Skills: practice public speaking in a supportive and welcoming environment.
-
-
-More reasons to submit!
-
-Give Back to the Community: Share your knowledge and inspire others to learn and grow.
-
-Get valuable feedback:on your ideas from an expert community.
-
-Exposure: get featured on our blog for even greater impact.
-
-
-
-What we are looking for
-From R packages to Shiny apps, data modelling to visualisation, and Devops to System integration.
-
-If you have knowledge to share, we would love to hear from you.
-
-
-
-Cold feet?
-
-Talks can be short in length, philosophical in nature, or a means to start conversation.
-
-If you are unsure about submitting, reach out to us, and would love to help.
-
-
-
-FAQ
-
-What if I need help developing my idea?
-
-How long should my talk be?
-
-Do I need experience speaking?
-
-Not at all! We welcome first time speakers and can help you prepare.
-
-Talks typically last between 20-40 minutes, but we welcome both short and longer talks.
-
-Reach out and we will be happy to help guide you in preparing your presentation, connecting you to people in our network where necessary.
-
-
-          Become our next speaker and reach a large community of open source enthusiasts in the Zurich Greater Area.
-          
-          - featured on the blog
-          - show your work and promote your open source projects
-          - get feedback from experts outside your organization
-          - speaking is easy, low hurdle format
-
-          features: 
-
-          - R packages
-          - DevOps integration
-          - Reporting
-          - Automation
-          - Statistical Modelling
-          - Machine Learning
-          - Data Management
-          - Software Engineering
-          - System Integration
-          - data visualiztion / shiny
-  
-
-
+        <div class="place-self-center">
+          <img src="public/bulb.svg" width="150">
+      </div>
+      <div class="place-self-center">
+        <h2 class="text-2xl lg:text-2xl font-bold lg:tracking-tight">
+          What We Are Looking for... 
+        </h2>
+        <p class="mb-6 leading-relaxed text-slate-500">
+          From R packages to Shiny apps, data modelling to visualisation, and Devops to System integration.
+          If you have knowledge to share, we would love to hear from you.
         </p>
+        <ul>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            R integration experience
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            New R packages
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            Data visualization & reports
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            Shiny apps & dashboards
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            Statistical modelling and applications
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            Data engineering
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            Software engineering practices
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            DevOps for data science
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            . . . your ideas!
+          </li>
+        </ul>
 
 
-        
 
+
+      </div>
+      <div class="place-self-center">
+        <h2 class="text-2xl lg:text-2xl font-bold lg:tracking-tight">
+          Cold Feet?
+        </h2>
+        <p class="mb-6 leading-relaxed text-slate-500">
+          Talks can be short in length, philosophical in nature, or a means to start conversation.
+          If you are unsure about submitting, reach out to us, we would love to help.
+        </p>
+      </div>
+      <div class="place-self-center">
+        <img src="public/coldfeet.svg" width="150">
+    </div>
+        </div>
+
+
+        <div class="mt-12 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+          <div class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200
+           px-5 py-2.5 bg-black text-white border-2 border-transparent flex gap-1">
+            To submit, send an email to: <u>hoi [ at ] zrug.ch</u>
+            </div>
+        </div>
+      </main>
       </div>
