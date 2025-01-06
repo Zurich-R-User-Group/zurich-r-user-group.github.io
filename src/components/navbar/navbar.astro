@@ -2,26 +2,25 @@
 import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
-import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
     title: "Give a Talk",
-    path: "/webdemo/talk",
+    path: "/talk",
   },
   {
     title: "Host a Meetup",
-    path: "/webdemo/host",
+    path: "/host",
   },
   {
     title: "About",
-    path: "/webdemo/about",
+    path: "/about",
   },
-  {
+  /*{
     title: "Blog",
     path: "/webdemo/blog",
-  },
+  },*/
 ];
 ---
 
@@ -83,8 +82,8 @@ const menuitems = [
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <a href="https://github.com/zurich-r-user-group"><Icon class="text-black" name="simple-icons:bluesky" /></a>
-        <a href="https://github.com/zurich-r-user-group"><Icon class="text-black" name="bx:bxl-linkedin" /></a>
+        <a href="https://bsky.app/profile/ruserszurich.bsky.social"><Icon class="text-black" name="simple-icons:bluesky" /></a>
+        <a href="https://www.linkedin.com/company/zuerich-r-user-group"><Icon class="text-black" name="bx:bxl-linkedin" /></a>
         <a href="https://github.com/zurich-r-user-group"><Icon class="text-black" name="simple-icons:github" /></a>
       </div>
     </div>
