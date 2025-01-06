@@ -2,14 +2,16 @@
 
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
-
-// Filter team entries with 'draft: false' & date before current date
+import { Icon } from "astro-icon/components";
 
 ---
 
 
 <Layout title="About">
   <Container>
+    <div class="place-self-center mb-12">
+      <img src="host1.svg">
+  </div>
     <h2 class="font-bold text-6xl text-gray-800">
       Statistical Computing &
     </h2>
@@ -19,8 +21,117 @@ import Container from "@components/container.astro";
     <h2 class="font-bold text-6xl text-gray-800">
       Community Outreach
     </h2>
-    <p class="w-2/3 text-lg leading-relaxed text-slate-500">
-      reasons to host:
+    <p class="w-2/3 text-lg leading-relaxed text-slate-500 mt-6 mb-12">
+      Hosting the Zurich R User Meetup is a fantastic opportunity to showcase your company.
+      Share your space, bring other data enthusiasts to your organization and contribute to the vibrant R programming community in the Zurich greater area.
+    </p>
+
+    <h2 class="font-bold text-3xl text-gray-800">
+      R & Beyond
+    </h2>
+    <p class="w-2/3 text-lg leading-relaxed text-slate-500 mt-2 mb-12">
+    Over the last three decades, The R Project for Statistical Computing has become a go-to software package across disciplines.
+    The project's active and inclusive community is the motor behind more than 25K extension packages that propelled the R
+    languages from domain specific niche tool to popular general purpose language. Modern R applications range from
+    state-of-the art statistical models and machine learning to webscrapers, APIs,
+    blogs, interactive data visualization and dashboards. Give your team a chance to present their use case and open source
+    enthusiasts to your organization. 
+    </p>
+
+    <h2 class="font-bold text-3xl text-gray-800">
+      Why Host an Event? 
+    </h2>
+    <div class="grid sm:grid-cols-2 gap-2 mx-auto mt-6">      
+      <p class=" text-lg leading-relaxed text-slate-500 mt-2 mb-12">
+        The Zurich R Meetup is one of the largest and most established tech meetups in the Zurich greater area 
+        and among the largest R user groups in all of Europe.
+        Bring a highly skilled community of data professionals, researchers, and students to your organisation. 
+        Engage with potential future employees passionate about analytics and innovation.
+        Give back to the local open source community and host a Zurich R user meetup! 
+      </p>
+      <div class="place-self-center">
+         <ul class="text-slate-500 mb-12">
+           <li class="flex items-center gap-3 text-neutral-800">
+             <Icon class="text-black" name="simple-icons:checkmarx" />
+             Brand recognition
+           </li>
+           <li class="flex items-center gap-3 text-neutral-800">
+             <Icon class="text-black" name="simple-icons:checkmarx" />
+             Networking opportunities
+           </li>
+           <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            Talent pipeline
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            Outside expert feedback
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            Promote research
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            Community contribution
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon class="text-black" name="simple-icons:checkmarx" />
+            Low-hurdle hosting
+          </li>
+         </ul>
+
+      </div>
+      
+
+
+    </div>
+
+
+    <h2 class="font-bold text-3xl text-gray-800">
+      We’ve been honored to collaborate with some amazing hosts, including...
+    </h2>
+
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-12 mb-12">
+        
+      <tbody>
+          <tr>
+              <td class="px-6 py-4"><a href="https://www.cynkra.com/" class="text-lg text-blue-600 hover:underline">cynkra</a></td>
+              <td class="px-6 py-4"><a href="https://www.datahouse.ch/" class="text-blue-600 text-lg hover:underline">datahouse</a></td>
+              <td class="px-6 py-4"><a href="http://www.ebay.ch/" class="text-blue-600 text-lg hover:underline">eBay</a></td>
+              <td class="px-6 py-4"><a href="https://www.helbling.ch/" class="text-blue-600 text-lg hover:underline">Helbling Group</a></td>
+          </tr>
+          <tr>
+              <td class="px-6 py-4"><a href="https://zurich.impacthub.ch/" class="text-blue-600 text-lg hover:underline">Impact Hub Zurich</a></td>
+              <td class="px-6 py-4"><a href="https://www.microsoft.com/en-us/" class="text-blue-600 text-lg hover:underline">Microsoft</a></td>
+              <td class="px-6 py-4"><a href="http://www.mirai-solutions.ch/" class="text-blue-600 text-lg hover:underline">Mirai Solutions</a></td>
+              <td class="px-6 py-4"><a href="https://www.nzz.ch/" class="text-blue-600 text-lg hover:underline">Neue Zürcher Zeitung</a></td>
+          </tr>
+          <tr>
+              <td class="px-6 py-4"><a href="https://partnerre.com/" class="text-blue-600 text-lg hover:underline">PartnerRe</a></td>
+              <td class="px-6 py-4"><a href="https://www.r-consortium.org/projects/r-user-group-support-program" class="text-blue-600 text-lg hover:underline">R Consortium</a></td>
+              <td class="px-6 py-4"><a href="https://www.rstudio.com/" class="text-blue-600 text-lg hover:underline">RStudio</a></td>
+              <td class="px-6 py-4"><a href="https://www.sanitas.com/" class="text-blue-600 text-lg hover:underline">Sanitas</a></td>
+          </tr>
+          <tr>
+              <td class="px-6 py-4"><a href="https://statistik.zh.ch/internet/justiz_inneres/statistik/en/home.html" class="text-blue-600 text-lg hover:underline">
+                Statistical Office Kanton Zurich</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="place-self-center mb-12">
+        <div class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200
+           px-5 py-2.5 bg-black text-white border-2 border-transparent flex gap-1">
+           Contact us to join this list of esteemed open source supporters.
+            </div>
+      </div>
+
+
+
+
+<!--
+       reasons to host:
       - largest and most established tech meetups in the Zurich greater area. 
       - Support Open Source 
       - bring together data enthusiasts to your organization
@@ -35,7 +146,7 @@ import Container from "@components/container.astro";
       R & Beyond
       Over the last three decades, The R Project for Statistical Computing has become a go-to software package across disciplines.
       The project's active and inclusive community is the motor behind more than 25K extension packages that propelled the R
-      languages from domain specific niche tool to popular general purpose languages. Modern R applications range from
+      languages from domain specific niche tool to popular general purpose language. Modern R applications range from
       state-of-the art statistical models and machine learning to webscrapers, APIs,
       blogs, interactive data visualization and dashboards. Give your team a chance to present their use case and open source
       enthusiasts to your organization. 
@@ -44,52 +155,12 @@ import Container from "@components/container.astro";
       
       
       Meet the Organizers
-    </p>
+
+-->
 
 
- - for sho
 
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">
-        Are You a useR ? 
-      </h2>
-      <p class="text-lg leading-relaxed text-slate-500">
-        Do you have a team of open source enthusiasts? Are you interested to point other data enthusiasts to your
-        organization or simply want to support the open source community?
-      </p>
-      <p>
-        fo shizzle.
-      </p>
-    </div>
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16 mb-16">
-      <h2 class="font-bold text-3xl text-gray-800">
-        Past Hosts
-      </h2>
-      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        
-        <tbody>
-            <tr>
-                <td class="px-6 py-4"><a href="https://www.cynkra.com/" class="text-lg text-blue-600 hover:underline">cynkra</a></td>
-                <td class="px-6 py-4"><a href="https://www.datahouse.ch/" class="text-blue-600 text-lg hover:underline">datahouse</a></td>
-                <td class="px-6 py-4"><a href="http://www.ebay.ch/" class="text-blue-600 text-lg hover:underline">eBay</a></td>
-                <td class="px-6 py-4"><a href="https://www.helbling.ch/" class="text-blue-600 text-lg hover:underline">Helbling Group</a></td>
-            </tr>
-            <tr>
-                <td class="px-6 py-4"><a href="https://zurich.impacthub.ch/" class="text-blue-600 text-lg hover:underline">Impact Hub Zurich</a></td>
-                <td class="px-6 py-4"><a href="https://www.microsoft.com/en-us/" class="text-blue-600 text-lg hover:underline">Microsoft</a></td>
-                <td class="px-6 py-4"><a href="http://www.mirai-solutions.ch/" class="text-blue-600 text-lg hover:underline">Mirai Solutions</a></td>
-                <td class="px-6 py-4"><a href="https://www.nzz.ch/" class="text-blue-600 text-lg hover:underline">Neue Zürcher Zeitung</a></td>
-            </tr>
-            <tr>
-                <td class="px-6 py-4"><a href="https://partnerre.com/" class="text-blue-600 text-lg hover:underline">PartnerRe</a></td>
-                <td class="px-6 py-4"><a href="https://www.r-consortium.org/projects/r-user-group-support-program" class="text-blue-600 text-lg hover:underline">R Consortium</a></td>
-                <td class="px-6 py-4"><a href="https://www.rstudio.com/" class="text-blue-600 text-lg hover:underline">RStudio</a></td>
-                <td class="px-6 py-4"><a href="https://www.sanitas.com/" class="text-blue-600 text-lg hover:underline">Sanitas</a></td>
-            </tr>
-            <tr>
-                <td class="px-6 py-4"><a href="https://statistik.zh.ch/internet/justiz_inneres/statistik/en/home.html" class="text-blue-600 text-lg hover:underline">
-                  Statistical Office Kanton Zurich</a></td>
-            </tr>
-    </div>
+
+
   </Container>
 </Layout>
