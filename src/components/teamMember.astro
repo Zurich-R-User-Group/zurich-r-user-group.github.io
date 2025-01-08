@@ -1,10 +1,20 @@
 ---
 // Props: member
 const { Content, data } = Astro.props;
+import { Picture } from "astro:assets";
+const imagePath = new URL(data.avatar.src, import.meta.url).pathname;
 ---
 
 <div class="group">
   <div class="mt-4 text-center">
+    <Picture
+    src={imagePath}
+    alt={data.avatar.alt}
+    sizes="(max-width: 800px) 100vw, 400px"
+    width={400}
+    height={400}
+    class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
+  />
     <h2 class="text-lg text-gray-800">{data.name}</h2>
     <h3 class="text-sm text-slate-500">
       {data.title}

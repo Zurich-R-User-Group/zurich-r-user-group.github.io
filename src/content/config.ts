@@ -11,7 +11,7 @@ const teamCollection = defineCollection({
     name: z.string(),
     title: z.string(),
     avatar: z.object({
-      //src: z.string(),
+      src: z.string(),
       alt: z.string(),
     }),
     publishDate: z.string().transform(str => new Date(str)),

@@ -3,7 +3,7 @@ draft: false
 name: "Aurélien Sallin"
 title: "Economist @SWICA"
 avatar: {
-    src: "",
+    src: "https://spaces-cdn.owlstown.com/blobs/if8ccb8jcg4zass0c0kl9406kc7d",
     alt: "Aurélien Sallin"
 }
 publishDate: "2022-11-08 15:39"
