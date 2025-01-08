@@ -1,6 +1,6 @@
 // 1. Import utilities from `astro:content`
-import { z, defineCollection } from 'astro:content';
-import { glob, file } from 'astro/loaders';
+import { z, defineCollection, render } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 
 // 2. Define your collection(s)
@@ -17,7 +17,6 @@ const teamCollection = defineCollection({
       alt: z.string(),
     }),
     publishDate: z.string().transform(str => new Date(str)),
-    body: z.string(),
   }),
 });
 

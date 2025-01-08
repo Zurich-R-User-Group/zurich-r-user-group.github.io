@@ -1,11 +1,26 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
+import TeamMember from '@components/TeamMember.astro';
 
-import { getCollection } from "astro:content";
-const teamMembers = await getCollection("team", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
-});
+import { getCollection, render } from 'astro:content';
+
+// Fetch the entire collection
+const teamMembers = await getCollection('team');
+
+// Render the body content for each team member
+const renderedMembers = await Promise.all(
+  teamMembers.map(async (member) => {
+    const { Content, headings } = await render(member);
+    return {
+      ...member,
+      Content, // Add the Content component to each member
+    };
+  })
+);
+
+
+
 
 
 
@@ -23,27 +38,9 @@ const teamMembers = await getCollection("team", ({ data }) => {
     </p>
   </div>
   <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12 mb-12">
-    {
-      teamMembers.map((member) => (
-        <div class="group">
-          
-          <div class="mt-4 text-center">
-            <h2 class="text-lg text-gray-800">{member.data.name}</h2>
-            <h3 class="text-sm text-slate-500">
-              {member.data.title}
-            </h3><p>
-              {member.body}
-            </p>
-          </div>
-        </div>
-      ))
-    }
-    <p>
-      <!--
-      {teamers.map((t) => (
-        t.rawContent
-      ))}
-       -->
-    </p>
+    {renderedMembers.map((member) => (
+      <TeamMember member={member} key={member.data.name} Content={member.Content} data={member.data} />
+    ))}
   </div>
+  
   

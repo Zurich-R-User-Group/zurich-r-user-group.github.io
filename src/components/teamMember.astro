@@ -1,0 +1,14 @@
+---
+// Props: member
+const { Content, data } = Astro.props;
+---
+
+<div class="group">
+  <div class="mt-4 text-center">
+    <h2 class="text-lg text-gray-800">{data.name}</h2>
+    <h3 class="text-sm text-slate-500">
+      {data.title}
+    </h3>
+    <Content />
+  </div>
+</div>
