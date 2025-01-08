@@ -4,10 +4,8 @@ import { glob } from 'astro/loaders';
 
 
 // 2. Define your collection(s)
-
-
 const teamCollection = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/team" }),
+  loader: glob({ pattern: "**/*.md", base: "./src/data/team" }),
   schema: z.object({
     draft: z.boolean(),
     name: z.string(),
