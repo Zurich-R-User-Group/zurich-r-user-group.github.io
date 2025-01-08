@@ -1,5 +1,5 @@
 ## Host a Zurich R Meetup
-Hosting the Zurich R User Meetup is a fantastic opportunity to showcase your company, share your space, and contribute to the vibrant R programming community in the Zurich greater area.
+Hosting the Zurich R User Meetup is a fantastic opportunity to showcase your company. Share your space, bring other data enthusiasts to your and contribute to the vibrant R programming community in the Zurich greater area.
 
 ## Why Host?
 
