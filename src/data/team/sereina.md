@@ -3,7 +3,7 @@ draft: false
 name: "Sereina M. Graber"
 title: "Health Sciences @Helsana."
 avatar: {
-    src: "../public/sereina.png",
+    src: "/src/assets/team/sereina.png",
     alt: "Sereina Graber"
 }
 publishDate: "2022-11-08 15:39"

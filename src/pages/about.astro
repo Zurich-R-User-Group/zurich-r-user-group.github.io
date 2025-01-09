@@ -6,12 +6,16 @@ import TeamMember from '@components/teamMember.astro';
 import { getCollection, render } from 'astro:content';
 
 // Fetch the entire collection
-const teamMembers = await getCollection('team');
+//const teamMembers = await getCollection('team');
+
+const teamMembers = await getCollection("team", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
 
 // Render the body content for each team member
 const renderedMembers = await Promise.all(
   teamMembers.map(async (member) => {
-    const { Content, headings } = await render(member);
+    const { Content } = await render(member);
     return {
       ...member,
       Content, // Add the Content component to each member

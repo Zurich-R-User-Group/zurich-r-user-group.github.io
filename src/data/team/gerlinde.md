@@ -3,7 +3,7 @@ draft: false
 name: "Gerlinde Theunissen"
 title: "Social Data Scientist. Phd Researcher @Uni Konstanz"
 avatar: {
-    src: "",
+    src: "/src/assets/team/gerlinde.png",
     alt: "Gerlinde Theunissen"
 }
 publishDate: "2022-11-08 15:39"
