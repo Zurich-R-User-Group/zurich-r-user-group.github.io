@@ -3,7 +3,7 @@ draft: false
 name: "Mike Page"
 title: "Data Scientist @cynkra"
 avatar: {
-    src: "/src/assets/team/mike.png",
+    src: "mike.png",
     alt: "Mike Page"
 }
 publishDate: "2022-11-09 15:39"

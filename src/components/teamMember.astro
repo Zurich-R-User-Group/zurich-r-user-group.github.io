@@ -2,13 +2,18 @@
 // Props: member
 const { Content, data } = Astro.props;
 import { Picture } from "astro:assets";
-const imagePath = new URL(data.avatar.src, import.meta.url).pathname;
+
+const getImage = async (src) => {
+  return await import(`../assets/team/${src}`)
+};
+
+
 ---
 
 <div class="group">
   <div class="mt-4 text-center">
     <Picture
-    src={imagePath}
+    src={getImage(data.avatar.src)}
     alt={data.avatar.alt}
     sizes="(max-width: 800px) 100vw, 400px"
     width={400}
