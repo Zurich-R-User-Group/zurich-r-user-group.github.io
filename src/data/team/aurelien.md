@@ -3,7 +3,7 @@ draft: false
 name: "Aurélien Sallin"
 title: "Economist @SWICA"
 avatar: {
-    src: "/src/assets/team/aurelien.png",
+    src: "../../assets/team/aurelien.png",
     alt: "Aurélien Sallin"
 }
 publishDate: "2022-11-08 15:39"

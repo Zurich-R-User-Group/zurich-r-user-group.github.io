@@ -6,20 +6,20 @@ To get started, you can clone this repository and install the dependencies.
 
 ### 1. Navigate to your project folder & clone the repository
 ```bash
-git clone https://github.com/mbannert/webdemo.git
+git clone git@github.com:Zurich-R-User-Group/zurich-r-user-group.github.io.git
 ```
 
 ### 2. Install Dependencies & start the development server
 
 ```bash
-cd webdemo # navigate to the project folder
+cd zurich-r-user-group.github.io # navigate to the project folder
 npm install
 npm run dev
 ```
 
 ## Project Structure
 
-Inside the folder `webdemo`, you'll see the following folders and files:
+Inside the folder `zurich-r-user-group.github.io`, you'll see the following folders and files:
 
 ```
 /
