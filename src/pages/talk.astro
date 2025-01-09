@@ -2,6 +2,13 @@
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import { Icon } from "astro-icon/components";
+import Picture from "astro/components/Picture.astro";
+
+import shout from "@assets/talk/shoutout.svg"
+import think from "@assets/talk/thinking.svg"
+import bulb from "@assets/talk/bulb.svg"
+import cold from "@assets/talk/coldfeet.svg"
+
 
 ---
 
@@ -26,7 +33,13 @@ import { Icon } from "astro-icon/components";
 
         <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24">
           <div class="place-self-center">
-              <img src="./shoutout.svg" width="200">
+            <Picture 
+            src={shout}
+             alt="Host an Event"
+              width={200}
+              height={200}
+              sizes="(max-width: 800px) 100vw, 400px"
+              class="w-full rounded-md" />
           </div>
           <div class="place-self-center">
             <h2 class="text-2xl lg:text-2xl font-bold lg:tracking-tight">
@@ -71,7 +84,13 @@ import { Icon } from "astro-icon/components";
         </div>
 
         <div class="place-self-center">
-          <img src="./bulb.svg" width="150">
+          <Picture 
+      src={bulb}
+       alt="Host an Event"
+        width={150}
+        height={150}
+        sizes="(max-width: 800px) 100vw, 400px"
+        class="w-full rounded-md" />
       </div>
       <div class="place-self-center">
         <h2 class="text-2xl lg:text-2xl font-bold lg:tracking-tight">
@@ -134,7 +153,13 @@ import { Icon } from "astro-icon/components";
         </p>
       </div>
       <div class="place-self-center">
-        <img src="./coldfeet.svg" width="130">
+        <Picture 
+      src={cold}
+       alt="Host an Event"
+        width={130}
+        height={130}
+        sizes="(max-width: 800px) 100vw, 400px"
+        class="w-full rounded-md" />
     </div>
         </div>
 
