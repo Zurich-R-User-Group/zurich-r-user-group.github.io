@@ -9,11 +9,8 @@ const teamCollection = defineCollection({
   schema: z.object({
     draft: z.boolean(),
     name: z.string(),
+    shortname: z.string(),
     title: z.string(),
-    avatar: z.object({
-      src: z.string(),
-      alt: z.string(),
-    }),
     publishDate: z.string().transform(str => new Date(str)),
   }),
 });
