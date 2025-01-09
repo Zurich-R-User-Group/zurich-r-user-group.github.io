@@ -4,7 +4,7 @@ const { Content, data } = Astro.props;
 import { Picture } from "astro:assets";
 
 const getImage = async (src) => {
-  return await import(`../assets/team/${src}`)
+  return await import(`../assets/team/${src}.png`)
 };
 
 
