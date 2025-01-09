@@ -1,11 +1,8 @@
 ---
 draft: false
 name: "Aurélien Sallin"
+shortname: "aurelien"
 title: "Economist @SWICA"
-avatar: {
-    src: "aurelien",
-    alt: "Aurélien Sallin"
-}
 publishDate: "2022-11-08 15:39"
 ---
 

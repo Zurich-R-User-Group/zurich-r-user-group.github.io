@@ -1,6 +1,7 @@
 ---
 draft: false
 name: "Minna Heim"
+shortname: "minna"
 title: "Data Science @UZH"
 avatar: {
     src: "",

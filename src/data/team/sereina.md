@@ -1,12 +1,9 @@
 ---
 draft: false
 name: "Sereina M. Graber"
+shortname: "sereina"
 title: "Health Sciences @Helsana."
-avatar: {
-    src: "sereina.png",
-    alt: "Sereina Graber"
-}
-publishDate: "2025-11-08 15:39"
+publishDate: "2022-11-08 15:39"
 ---
 
 Sereina is a data scientist and researcher at the Department of Health Sciences 

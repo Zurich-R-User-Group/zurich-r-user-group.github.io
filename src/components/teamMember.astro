@@ -3,18 +3,36 @@
 const { Content, data } = Astro.props;
 import { Picture } from "astro:assets";
 
-const getImage = async (src) => {
-  return await import(`../assets/team/${src}.png`)
-};
+// Dynamic images that use the picture component are quite a beast
+// super useful for responsive websites but dynamic rendering is tricky
+// for example Vite requires static extensions. This would require an extra
+// step to handle .jpg and png etc. Hence collections / markdown does not 
+// seem to be the best location to store images. 
+// hence we rather import the images to the component. 
+// also, sync importing allows us the go with out async / await. 
+// by matt jan 2025. 
 
+import matt from '../assets/team/matt.jpg';
+import sereina from '../assets/team/sereina.png';
+import aurelien from '../assets/team/aurelien.png'
+import mike from '../assets/team/mike.png'
+import gerlinde from '../assets/team/gerlinde.png'
+
+const imgs = {
+  "sereina": sereina,
+  "gerlinde": gerlinde,
+  "aurelien": aurelien,
+  "mike": mike,
+  "matt": matt
+}
 
 ---
 
 <div class="group">
   <div class="mt-4 text-center">
     <Picture
-    src={getImage(data.avatar.src)}
-    alt={data.avatar.alt}
+    src={imgs[data.shortname]}
+    alt={data.name}
     sizes="(max-width: 800px) 100vw, 400px"
     width={400}
     height={400}

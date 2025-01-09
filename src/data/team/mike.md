@@ -1,11 +1,8 @@
 ---
 draft: false
 name: "Mike Page"
+shortname: "mike"
 title: "Data Scientist @cynkra"
-avatar: {
-    src: "mike.png",
-    alt: "Mike Page"
-}
 publishDate: "2022-11-09 15:39"
 ---
 
