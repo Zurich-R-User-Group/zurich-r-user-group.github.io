@@ -347,7 +347,7 @@ const data_2015 = data.filter(meetup => meetup.year === 2015);
 <!-- table end -->
 
 
-<div class="hidden sm:block flex justify-center space-x-2 mb-16">
+<div class="hidden sm:flex justify-center space-x-2 mb-16">
     <button class="page-button" data-page="2024">2024</button>
     <button class="page-button" data-page="2023">2023</button>
     <button class="page-button" data-page="2022">2022</button>
@@ -359,6 +359,10 @@ const data_2015 = data.filter(meetup => meetup.year === 2015);
     <button class="page-button" data-page="2016">2016</button>
     <button class="page-button" data-page="2015">2015</button>
     <!-- Add more buttons as needed -->
+</div>
+<div class="md:hidden space-x-2 mb-16">
+    <h2 class="text-2xl">Missing Content?</h2>
+Please note that we do not display a comprehensive table of past events on small screens. 
 </div>
 
 <script>
