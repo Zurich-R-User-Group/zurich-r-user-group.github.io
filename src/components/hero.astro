@@ -1,27 +1,22 @@
 ---
 import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon/components";
+import DynamicBadge from "@components/dynamicBadge.astro";
+
+const eventDate = "January 23"
+const announce = "Next Event"
+const badgeCta = "register now!"
+const eventLink = "https://www.meetup.com/zurich-r-user-group/events/304647040/?eventOrigin=group_upcoming_events"
+
 ---
 
 <main
-  class="w-3/4 pt-16 pb-8 md:pt-12 md:pb-6">
-  
-  <!-- <div class="py-6 md:order-1 hidden md:block max-w-md mx-auto">
-import { Picture } from "astro:assets";
-import heroImage from "assets/zru_logo_old.png";
+  class="grid lg:grid-cols-3 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  <div class="py-6 md:order-1 hidden md:block lg:col-span-1">
 
-  <Picture
-      src={heroImage}
-      alt="Zurich R User Group"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-      class="w-full h-auto"
-    />
+   <DynamicBadge eventDate = {eventDate} announce = {announce} badgeCta = {badgeCta} eventLink = {eventLink}/>
+
   </div>
-   -->
-  <div>
+  <div class="lg:col-span-2">
     <h1
       class="text-5xl lg:text-6xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter">
       Connect With More Than 2'300 R and Data Enthusiasts!
@@ -31,12 +26,6 @@ import heroImage from "assets/zru_logo_old.png";
     Join our meetup events and become part of a lively analytics community. 
     Thanks to our speakers, hosts, and sponsors, our events are completely free. 
     </p>
-<!--
-    <div class="place-self-center mb-12">
-      <img src="badge.svg">
-  </div>
-
- -->
     
   </div>
 </main>
