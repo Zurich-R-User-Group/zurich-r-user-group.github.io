@@ -31,17 +31,14 @@ import cold from "@assets/talk/coldfeet.svg"
           Do you have a passion for R? A project you’re proud of? Insights into the latest tech trends? Whether you're a seasoned speaker or a first-timer, our meetup group is the perfect platform to share your ideas, grow your skills, and connect with fellow R enthusiasts.
         </p>
 
-        <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24">
-          <div class="place-self-center">
+        <div class="grid sm:grid-cols-3 gap-10 mx-auto mt-24">
+          <div class="col-span-1 place-self-center">
             <Picture 
-            src={shout}
-             alt="Host an Event"
-              width={200}
-              height={200}
-              sizes="(max-width: 800px) 100vw, 400px"
+              src={shout}
+              alt="Host an Event"
               class="w-full rounded-md" />
           </div>
-          <div class="place-self-center">
+          <div class="col-span-2 place-self-center">
             <h2 class="text-2xl lg:text-2xl font-bold lg:tracking-tight">
               Why Submit?
             </h2>
@@ -70,7 +67,7 @@ import cold from "@assets/talk/coldfeet.svg"
             </ul>
           </div>
 
-          <div class="place-self-center">
+          <div class="col-span-2 place-self-center">
             <h2 class="text-2xl lg:text-2xl font-bold lg:tracking-tight">
               Still Mulling Over Submission?
             </h2>
@@ -79,20 +76,23 @@ import cold from "@assets/talk/coldfeet.svg"
               Get featured on our blog for even greater visibility and impact. 
             </p>
           </div>
-          <div class="place-self-center">
-            <img src="./thinking.svg" width="130">
-        </div>
-
-        <div class="place-self-center">
-          <Picture 
-      src={bulb}
-       alt="Host an Event"
-        width={150}
-        height={150}
-        sizes="(max-width: 800px) 100vw, 400px"
-        class="w-full rounded-md" />
+          <div class="col-span-1 place-self-center">
+            <Picture 
+              src={think}
+              alt="Host an Event"
+              class="rounded-md" />
       </div>
-      <div class="place-self-center">
+        
+
+        <div class="col-span-1 place-self-center">
+          <Picture 
+            src={bulb}
+            alt="Host an Event"
+            width={100}
+            height={100}
+            class="w-full rounded-md" />
+      </div>
+      <div class="col-span-2 place-self-center">
         <h2 class="text-2xl lg:text-2xl font-bold lg:tracking-tight">
           What We Are Looking for... 
         </h2>
@@ -143,7 +143,7 @@ import cold from "@assets/talk/coldfeet.svg"
 
 
       </div>
-      <div class="place-self-center">
+      <div class="col-span-2 place-self-center">
         <h2 class="text-2xl lg:text-2xl font-bold lg:tracking-tight">
           Cold Feet?
         </h2>
@@ -152,14 +152,11 @@ import cold from "@assets/talk/coldfeet.svg"
           If you are unsure about submitting, reach out to us, we would love to help.
         </p>
       </div>
-      <div class="place-self-center">
+      <div class="col-span-1 place-self-center">
         <Picture 
-      src={cold}
-       alt="Host an Event"
-        width={130}
-        height={130}
-        sizes="(max-width: 800px) 100vw, 400px"
-        class="w-full rounded-md" />
+          src={cold}
+          alt="Host an Event"
+          class="rounded-md" />
     </div>
         </div>
 
@@ -170,5 +167,6 @@ import cold from "@assets/talk/coldfeet.svg"
             To submit, send an email to: <u>hoi [ at ] zrug.ch</u>
             </div>
         </div>
+      </div>
       </main>
       </div>
