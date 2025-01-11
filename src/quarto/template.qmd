@@ -1,0 +1,24 @@
+---
+title: "Blog Post Template"
+toc: false
+draft: false
+snippet: "sayin this and that cause this and that was missin."
+image: '{
+    src: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?&fit=crop&w=430&h=240",
+    alt: "frontend master"
+}'
+publishDate: "2025-01-11"
+category: "News" <!-- should be one of News, Event Report, R Highlight -->
+tags: [zrug, HNY, WSL]
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+```{r}
+
+rn <- rnorm(100)
+plot(rn)
+
+```

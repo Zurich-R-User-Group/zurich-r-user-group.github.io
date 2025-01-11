@@ -13,7 +13,33 @@ Our blog is the most dynamic part of our website and therefore uses a data scien
 We plan to cover all of our meetup events, group news, some R highlights and possibly an occasional guest post. 
 The following guide assumes that you have cloned this repository. 
 
-### Copy the Quarto Blog Post Template
+
+### Scenario A: Just Text and Images
+
+If you do not want run R code, e.g., to create figures or tables, and your blog post just consists of markdown text and few images, 
+simply using markdown without the likes of Quarto, knitr or notebooks is the best choice. 
+To do so, simply create a new branch
+
+```
+git checkout -b somepost
+```
+
+and copy our template file to posts folder
+
+```
+cp src/quarto/template.qmd src/content/blog/somepost/index.md
+```
+
+Where `somepost` is the slug/folder name of your blogpost, choose a lowercase only, meaningful name. 
+Use `kebap-case-style` if you like for better readability. 
+
+Don't be fooled by the quarto folder name of the template, we just use one template for all types of posts.
+Edit the newly created file in `src/content/blog/somepost/index.md`. 
+Once you're done commit and push the markdown file to the remote repository, issue a pull request and assign a reviewer. 
+When the blog post is reviewed and merged, it gets published by GitHub Actions in automated fashion. 
+
+
+### Scenario B: A Quarto Based Blog Post
 
 Create a separate branch for the new post.
 
