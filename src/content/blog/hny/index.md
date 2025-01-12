@@ -20,7 +20,7 @@ One of the largest and most established tech meetups in the Zurich Greater area.
 Literally thousands of members benefitted from the events and the network at large. 
 
 We -- that's Aurelien, Gerlinde, Matt, Mike, Minna and Sereina -- are excited to contribute to the great tradition of R meetups in the Zurich Greater area and the chance to bring useRs together. To learn more about us, our approach and future developments, explore our new website on 
-https://zurich-r-user-group.github.io) and make sure to come to one of our meetups! 
+https://zurich-r-user-group.github.io and make sure to come to one of our meetups! 
 
 
 ## The Show Goes on:<br>Geodata and Landscape Insights with R @WSL

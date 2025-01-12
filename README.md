@@ -88,7 +88,7 @@ git push -u origin somepost
 
 ```
 
-After pushing, assign a reviewer on GitHib and get your bog post merged. 
+After pushing, assign a reviewer on GitHub and get your blog post merged. 
 
 
 
@@ -128,7 +128,7 @@ Inside the folder `zurich-r-user-group.github.io`, you'll see the following fold
 └── package.json
 ```
 
-The different webpages, i.e. the main page can be found under `src/pages/`. Currently only the pages `about.astro`, `blog.astro` and `host.astro`. The `index.astro` just combines all components which can be found on the main page. The layout of the pages can be found under `src/layouts/`. The components used in the pages can be found under `src/components/`.
+The different webpages, i.e. the main page can be found under `src/pages/`. Currently only the pages `about.astro`, `blog.astro` and `host.astro` exist. The `index.astro` just combines all components which can be found on the main page. The layout of the pages can be found under `src/layouts/`. The components used in the pages can be found under `src/components/`.
 
 
 ## Update Events
