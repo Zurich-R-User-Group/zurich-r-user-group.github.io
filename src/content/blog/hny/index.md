@@ -15,7 +15,7 @@ We hope you have enjoyed a peaceful and recreational festive season and already 
 ## Thank You, Ladies!
 
 For the R user group Zurich, the end of 2024 brought one of the biggest changes in almost a decade: 
-After 8 years and more than 40 (!!) meetups, Muriel, Rachel and Dorothea said <a href="">Farewell to an Incredible Journey with the Zurich R User Group (RUG)</a>. We would like to use this platform to say thanks for your creativity, your effort and your endurance that were so crucial to making the Zurich R user group what it is today:
+After 8 years and more than 40 (!!) meetups, Muriel, Rachel and Dorothea said <a href="https://www.linkedin.com/posts/activity-7244638275401879552-rSn2">Farewell to an Incredible Journey with the Zurich R User Group (RUG)</a>. We would like to use this platform to say thanks for your creativity, your effort and your endurance that were so crucial to making the Zurich R user group what it is today:
 One of the largest and most established tech meetups in the Zurich Greater area. 
 Literally thousands of members benefitted from the events and the network at large. 
 
