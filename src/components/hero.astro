@@ -2,31 +2,36 @@
 import Link from "@components/ui/link.astro";
 import DynamicBadge from "@components/dynamicBadge.astro";
 
-const eventDate = "January 23"
-const announce = "Next Event"
-const badgeCta = "register now!"
-const eventLink = "https://www.meetup.com/zurich-r-user-group/events/304647040/?eventOrigin=group_upcoming_events"
-
+const eventDate = "June 26";
+const announce = "Next Event";
+const badgeCta = "register now!";
+const eventLink =
+  "https://www.meetup.com/zurich-r-user-group/events/308326031/?eventOrigin=group_events_list";
 ---
 
 <main
-  class="grid lg:grid-cols-3 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  class="grid lg:grid-cols-3 place-items-center pt-16 pb-8 md:pt-12 md:pb-24"
+>
   <div class="py-6 md:order-1 hidden md:block lg:col-span-1">
-
-   <DynamicBadge eventDate = {eventDate} announce = {announce} badgeCta = {badgeCta} eventLink = {eventLink}/>
-
+    <DynamicBadge
+      eventDate={eventDate}
+      announce={announce}
+      badgeCta={badgeCta}
+      eventLink={eventLink}
+    />
   </div>
   <div class="lg:col-span-2">
     <h1
-      class="text-5xl lg:text-6xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter">
+      class="text-5xl lg:text-6xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter"
+    >
       Connect With More Than 2'300 R and Data Enthusiasts!
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-    Founded in 2014, the Zurich R User group is one of the largest R user groups in Europe.
-    Join our meetup events and become part of a lively analytics community. 
-    Thanks to our speakers, hosts, and sponsors, our events are completely free. 
+      Founded in 2014, the Zurich R User group is one of the largest R user
+      groups in Europe. Join our meetup events and become part of a lively
+      analytics community. Thanks to our speakers, hosts, and sponsors, our
+      events are completely free.
     </p>
-    
   </div>
 </main>
 
@@ -35,7 +40,8 @@ const eventLink = "https://www.meetup.com/zurich-r-user-group/events/304647040/?
     href="https://www.meetup.com/zurich-r-user-group/"
     target="_blank"
     class="flex gap-1"
-    rel="noopener">
+    rel="noopener"
+  >
     <!-- <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" /> -->
     Attend a Meetup
   </Link>
