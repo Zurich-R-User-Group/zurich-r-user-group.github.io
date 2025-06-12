@@ -1,392 +1,443 @@
 ---
-import {data} from '../utils/read_csv.ts';
-import EventRows from '@components/events.astro'
+import { data } from "../utils/read_csv.ts";
+import EventRows from "@components/events.astro";
 
-const data_2024 = data.filter(meetup => meetup.year === 2024);
-const data_2023 = data.filter(meetup => meetup.year === 2023);
-const data_2022 = data.filter(meetup => meetup.year === 2022);
-const data_2021 = data.filter(meetup => meetup.year === 2021);
-const data_2020 = data.filter(meetup => meetup.year === 2020);
-const data_2019 = data.filter(meetup => meetup.year === 2019);
-const data_2018 = data.filter(meetup => meetup.year === 2018);
-const data_2017 = data.filter(meetup => meetup.year === 2017);
-const data_2016 = data.filter(meetup => meetup.year === 2016);
-const data_2015 = data.filter(meetup => meetup.year === 2015);
-
-
-
-
+const data_2025 = data.filter((meetup) => meetup.year === 2025);
+const data_2024 = data.filter((meetup) => meetup.year === 2024);
+const data_2023 = data.filter((meetup) => meetup.year === 2023);
+const data_2022 = data.filter((meetup) => meetup.year === 2022);
+const data_2021 = data.filter((meetup) => meetup.year === 2021);
+const data_2020 = data.filter((meetup) => meetup.year === 2020);
+const data_2019 = data.filter((meetup) => meetup.year === 2019);
+const data_2018 = data.filter((meetup) => meetup.year === 2018);
+const data_2017 = data.filter((meetup) => meetup.year === 2017);
+const data_2016 = data.filter((meetup) => meetup.year === 2016);
+const data_2015 = data.filter((meetup) => meetup.year === 2015);
 ---
 
 <style>
-    .table-alternate tbody tr:nth-child(odd) {
-        background-color: #f9f9f9; /* Light gray for odd rows */
-    }
-    .table-alternate tbody tr:nth-child(even) {
-        background-color: #ffffff; /* White for even rows */
-    }
+  .table-alternate tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for odd rows */
+  }
+  .table-alternate tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+  }
 
-    .table-hover tbody tr:hover {
-        background-color: #e9e9e9; /* Slightly toned gray on hover */
-    }
+  .table-hover tbody tr:hover {
+    background-color: #e9e9e9; /* Slightly toned gray on hover */
+  }
 </style>
 
 
-
-<div class="hidden sm:block mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 mb-12 scroll-mt-12">
+<div
+  class="hidden sm:block mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 mb-12 scroll-mt-12"
+>
   <!-- tables start -->
   <div class="relative overflow-x-auto">
+    <div id="page-2025" class="table-content">
+      <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+          Past Events 2025
+        </h2>
+      </div>
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3 topic-col">Topic</th>
+            <th scope="col" class="px-6 py-3">Host</th>
+            <th scope="col" class="px-6 py-3">Speakers</th>
+            <th scope="col" class="px-6 py-3">Slides</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            data_2025.map((Event) => (
+              <EventRows
+                Topic={Event.Topic}
+                Host={Event.Host}
+                Speakers={Event.Speakers}
+                Slides={Event.Slides}
+              />
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
 
-  <div id="page-2024" class="table-content">
-    <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+    <div id="page-2024" class="hidden table-content">
+      <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
         <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
           Past Events 2024
         </h2>
-      </div> 
-    <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3 topic-col">Topic</th>
-                <th scope="col" class="px-6 py-3">Host</th>
-                <th scope="col" class="px-6 py-3">Speakers</th>
-                <th scope="col" class="px-6 py-3">Slides</th>
-            </tr>
+      </div>
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3 topic-col">Topic</th>
+            <th scope="col" class="px-6 py-3">Host</th>
+            <th scope="col" class="px-6 py-3">Speakers</th>
+            <th scope="col" class="px-6 py-3">Slides</th>
+          </tr>
         </thead>
         <tbody>
-            {
-                data_2024.map((Event) => (
-                    <EventRows
-                     Topic = {Event.Topic}
-                     Host = {Event.Host}
-                     Speakers = {Event.Speakers}
-                     Slides = {Event.Slides} 
-                     />
-                ))
-            }
-           </tbody>
-    </table>
-</div>
+          {
+            data_2024.map((Event) => (
+              <EventRows
+                Topic={Event.Topic}
+                Host={Event.Host}
+                Speakers={Event.Speakers}
+                Slides={Event.Slides}
+              />
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
 
-<div id="page-2023" class="hidden table-content">
-    <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
-        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-          2023
-        </h2>
-      </div> 
-    <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3 topic-col">Topic</th>
-                <th scope="col" class="px-6 py-3">Host</th>
-                <th scope="col" class="px-6 py-3">Speakers</th>
-                <th scope="col" class="px-6 py-3">Slides</th>
-            </tr>
+    <div id="page-2023" class="hidden table-content">
+      <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">2023</h2>
+      </div>
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3 topic-col">Topic</th>
+            <th scope="col" class="px-6 py-3">Host</th>
+            <th scope="col" class="px-6 py-3">Speakers</th>
+            <th scope="col" class="px-6 py-3">Slides</th>
+          </tr>
         </thead>
         <tbody>
-            {
-                data_2023.map((Event) => (
-                    <EventRows
-                     Topic = {Event.Topic}
-                     Host = {Event.Host}
-                     Speakers = {Event.Speakers}
-                     Slides = {Event.Slides} 
-                     />
-                ))
-            }
-           </tbody>
-    </table>
-</div>
+          {
+            data_2023.map((Event) => (
+              <EventRows
+                Topic={Event.Topic}
+                Host={Event.Host}
+                Speakers={Event.Speakers}
+                Slides={Event.Slides}
+              />
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
 
-<div id="page-2022" class="hidden table-content">
-    <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
-        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-          2022
-        </h2>
-      </div> 
-    <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3 topic-col">Topic</th>
-                <th scope="col" class="px-6 py-3">Host</th>
-                <th scope="col" class="px-6 py-3">Speakers</th>
-                <th scope="col" class="px-6 py-3">Slides</th>
-            </tr>
+    <div id="page-2022" class="hidden table-content">
+      <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">2022</h2>
+      </div>
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3 topic-col">Topic</th>
+            <th scope="col" class="px-6 py-3">Host</th>
+            <th scope="col" class="px-6 py-3">Speakers</th>
+            <th scope="col" class="px-6 py-3">Slides</th>
+          </tr>
         </thead>
         <tbody>
-            {
-                data_2022.map((Event) => (
-                    <EventRows
-                     Topic = {Event.Topic}
-                     Host = {Event.Host}
-                     Speakers = {Event.Speakers}
-                     Slides = {Event.Slides} 
-                     />
-                ))
-            }
-           </tbody>
-    </table>
-</div>
+          {
+            data_2022.map((Event) => (
+              <EventRows
+                Topic={Event.Topic}
+                Host={Event.Host}
+                Speakers={Event.Speakers}
+                Slides={Event.Slides}
+              />
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
 
-<div id="page-2021" class="hidden table-content">
-    <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
-        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-          2021
-        </h2>
-      </div> 
-    <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3 topic-col">Topic</th>
-                <th scope="col" class="px-6 py-3">Host</th>
-                <th scope="col" class="px-6 py-3">Speakers</th>
-                <th scope="col" class="px-6 py-3">Slides</th>
-            </tr>
+    <div id="page-2021" class="hidden table-content">
+      <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">2021</h2>
+      </div>
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3 topic-col">Topic</th>
+            <th scope="col" class="px-6 py-3">Host</th>
+            <th scope="col" class="px-6 py-3">Speakers</th>
+            <th scope="col" class="px-6 py-3">Slides</th>
+          </tr>
         </thead>
         <tbody>
-            {
-                data_2021.map((Event) => (
-                    <EventRows
-                     Topic = {Event.Topic}
-                     Host = {Event.Host}
-                     Speakers = {Event.Speakers}
-                     Slides = {Event.Slides} 
-                     />
-                ))
-            }
-           </tbody>
-    </table>
-</div>
+          {
+            data_2021.map((Event) => (
+              <EventRows
+                Topic={Event.Topic}
+                Host={Event.Host}
+                Speakers={Event.Speakers}
+                Slides={Event.Slides}
+              />
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
 
-<div id="page-2020" class="hidden table-content">
-    <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
-        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-          2020
-        </h2>
-      </div> 
-    <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3 topic-col">Topic</th>
-                <th scope="col" class="px-6 py-3">Host</th>
-                <th scope="col" class="px-6 py-3">Speakers</th>
-                <th scope="col" class="px-6 py-3">Slides</th>
-            </tr>
+    <div id="page-2020" class="hidden table-content">
+      <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">2020</h2>
+      </div>
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3 topic-col">Topic</th>
+            <th scope="col" class="px-6 py-3">Host</th>
+            <th scope="col" class="px-6 py-3">Speakers</th>
+            <th scope="col" class="px-6 py-3">Slides</th>
+          </tr>
         </thead>
         <tbody>
-            {
-                data_2020.map((Event) => (
-                    <EventRows
-                     Topic = {Event.Topic}
-                     Host = {Event.Host}
-                     Speakers = {Event.Speakers}
-                     Slides = {Event.Slides} 
-                     />
-                ))
-            }
-           </tbody>
-    </table>
-</div>
+          {
+            data_2020.map((Event) => (
+              <EventRows
+                Topic={Event.Topic}
+                Host={Event.Host}
+                Speakers={Event.Speakers}
+                Slides={Event.Slides}
+              />
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
 
-<div id="page-2019" class="hidden table-content">
-    <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
-        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-          2019
-        </h2>
-      </div> 
-    <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3 topic-col">Topic</th>
-                <th scope="col" class="px-6 py-3">Host</th>
-                <th scope="col" class="px-6 py-3">Speakers</th>
-                <th scope="col" class="px-6 py-3">Slides</th>
-            </tr>
+    <div id="page-2019" class="hidden table-content">
+      <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">2019</h2>
+      </div>
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3 topic-col">Topic</th>
+            <th scope="col" class="px-6 py-3">Host</th>
+            <th scope="col" class="px-6 py-3">Speakers</th>
+            <th scope="col" class="px-6 py-3">Slides</th>
+          </tr>
         </thead>
         <tbody>
-            {
-                data_2019.map((Event) => (
-                    <EventRows
-                     Topic = {Event.Topic}
-                     Host = {Event.Host}
-                     Speakers = {Event.Speakers}
-                     Slides = {Event.Slides} 
-                     />
-                ))
-            }
-           </tbody>
-    </table>
-</div>
+          {
+            data_2019.map((Event) => (
+              <EventRows
+                Topic={Event.Topic}
+                Host={Event.Host}
+                Speakers={Event.Speakers}
+                Slides={Event.Slides}
+              />
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
 
-
-<div id="page-2018" class="hidden table-content">
-    <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
-        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-          2018
-        </h2>
-      </div> 
-    <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3 topic-col">Topic</th>
-                <th scope="col" class="px-6 py-3">Host</th>
-                <th scope="col" class="px-6 py-3">Speakers</th>
-                <th scope="col" class="px-6 py-3">Slides</th>
-            </tr>
+    <div id="page-2018" class="hidden table-content">
+      <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">2018</h2>
+      </div>
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3 topic-col">Topic</th>
+            <th scope="col" class="px-6 py-3">Host</th>
+            <th scope="col" class="px-6 py-3">Speakers</th>
+            <th scope="col" class="px-6 py-3">Slides</th>
+          </tr>
         </thead>
         <tbody>
-            {
-                data_2018.map((Event) => (
-                    <EventRows
-                     Topic = {Event.Topic}
-                     Host = {Event.Host}
-                     Speakers = {Event.Speakers}
-                     Slides = {Event.Slides} 
-                     />
-                ))
-            }
-           </tbody>
-    </table>
-</div>
+          {
+            data_2018.map((Event) => (
+              <EventRows
+                Topic={Event.Topic}
+                Host={Event.Host}
+                Speakers={Event.Speakers}
+                Slides={Event.Slides}
+              />
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
 
-
-<div id="page-2017" class="hidden table-content">
-    <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
-        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-          2017
-        </h2>
-      </div> 
-    <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3 topic-col">Topic</th>
-                <th scope="col" class="px-6 py-3">Host</th>
-                <th scope="col" class="px-6 py-3">Speakers</th>
-                <th scope="col" class="px-6 py-3">Slides</th>
-            </tr>
+    <div id="page-2017" class="hidden table-content">
+      <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">2017</h2>
+      </div>
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3 topic-col">Topic</th>
+            <th scope="col" class="px-6 py-3">Host</th>
+            <th scope="col" class="px-6 py-3">Speakers</th>
+            <th scope="col" class="px-6 py-3">Slides</th>
+          </tr>
         </thead>
         <tbody>
-            {
-                data_2017.map((Event) => (
-                    <EventRows
-                     Topic = {Event.Topic}
-                     Host = {Event.Host}
-                     Speakers = {Event.Speakers}
-                     Slides = {Event.Slides} 
-                     />
-                ))
-            }
-           </tbody>
-    </table>
-</div>
+          {
+            data_2017.map((Event) => (
+              <EventRows
+                Topic={Event.Topic}
+                Host={Event.Host}
+                Speakers={Event.Speakers}
+                Slides={Event.Slides}
+              />
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
 
-
-<div id="page-2016" class="hidden table-content">
-    <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
-        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-          2016
-        </h2>
-      </div> 
-    <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3 topic-col">Topic</th>
-                <th scope="col" class="px-6 py-3">Host</th>
-                <th scope="col" class="px-6 py-3">Speakers</th>
-                <th scope="col" class="px-6 py-3">Slides</th>
-            </tr>
+    <div id="page-2016" class="hidden table-content">
+      <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">2016</h2>
+      </div>
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3 topic-col">Topic</th>
+            <th scope="col" class="px-6 py-3">Host</th>
+            <th scope="col" class="px-6 py-3">Speakers</th>
+            <th scope="col" class="px-6 py-3">Slides</th>
+          </tr>
         </thead>
         <tbody>
-            {
-                data_2016.map((Event) => (
-                    <EventRows
-                     Topic = {Event.Topic}
-                     Host = {Event.Host}
-                     Speakers = {Event.Speakers}
-                     Slides = {Event.Slides} 
-                     />
-                ))
-            }
-           </tbody>
-    </table>
-</div>
+          {
+            data_2016.map((Event) => (
+              <EventRows
+                Topic={Event.Topic}
+                Host={Event.Host}
+                Speakers={Event.Speakers}
+                Slides={Event.Slides}
+              />
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
 
-
-<div id="page-2015" class="hidden table-content">
-    <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
-        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-          2015
-        </h2>
-      </div> 
-    <table  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3 topic-col">Topic</th>
-                <th scope="col" class="px-6 py-3">Host</th>
-                <th scope="col" class="px-6 py-3">Speakers</th>
-                <th scope="col" class="px-6 py-3">Slides</th>
-            </tr>
+    <div id="page-2015" class="hidden table-content">
+      <div class="mt-6 justify-center mb-16 flex flex-col sm:flex-row gap-3">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">2015</h2>
+      </div>
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-hover"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3 topic-col">Topic</th>
+            <th scope="col" class="px-6 py-3">Host</th>
+            <th scope="col" class="px-6 py-3">Speakers</th>
+            <th scope="col" class="px-6 py-3">Slides</th>
+          </tr>
         </thead>
         <tbody>
-            {
-                data_2015.map((Event) => (
-                    <EventRows
-                     Topic = {Event.Topic}
-                     Host = {Event.Host}
-                     Speakers = {Event.Speakers}
-                     Slides = {Event.Slides} 
-                     />
-                ))
-            }
-           </tbody>
-    </table>
-</div>
-
-
+          {
+            data_2015.map((Event) => (
+              <EventRows
+                Topic={Event.Topic}
+                Host={Event.Host}
+                Speakers={Event.Speakers}
+                Slides={Event.Slides}
+              />
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 <!-- table end -->
 
-
 <div class="hidden sm:flex justify-center space-x-2 mb-16">
-    <button class="page-button" data-page="2024">2024</button>
-    <button class="page-button" data-page="2023">2023</button>
-    <button class="page-button" data-page="2022">2022</button>
-    <button class="page-button" data-page="2021">2021</button>
-    <button class="page-button" data-page="2020">2020</button>
-    <button class="page-button" data-page="2019">2019</button>
-    <button class="page-button" data-page="2018">2018</button>
-    <button class="page-button" data-page="2017">2017</button>
-    <button class="page-button" data-page="2016">2016</button>
-    <button class="page-button" data-page="2015">2015</button>
-    <!-- Add more buttons as needed -->
+  <button class="page-button" data-page="2025">2025</button>
+  <button class="page-button" data-page="2024">2024</button>
+  <button class="page-button" data-page="2023">2023</button>
+  <button class="page-button" data-page="2022">2022</button>
+  <button class="page-button" data-page="2021">2021</button>
+  <button class="page-button" data-page="2020">2020</button>
+  <button class="page-button" data-page="2019">2019</button>
+  <button class="page-button" data-page="2018">2018</button>
+  <button class="page-button" data-page="2017">2017</button>
+  <button class="page-button" data-page="2016">2016</button>
+  <button class="page-button" data-page="2015">2015</button>
+  <!-- Add more buttons as needed -->
 </div>
 <div class="md:hidden space-x-2 mb-16">
-    <h2 class="text-2xl">Missing Content?</h2>
-Please note that we do not display a comprehensive table of past events on small screens. 
+  <h2 class="text-2xl">Missing Content?</h2>
+  Please note that we do not display a comprehensive table of past events on small
+  screens.
 </div>
 
 <script>
-    function showPage(page: number): void {
-      const tableContents: NodeListOf<HTMLElement> = document.querySelectorAll('.table-content');
-      tableContents.forEach(table => {
-        table.classList.add('hidden');
-      });
-    
-      const selectedTable = document.getElementById(`page-${page}`);
-      if (selectedTable) {
-        selectedTable.classList.remove('hidden');
-      }
+  function showPage(page: number): void {
+    const tableContents: NodeListOf<HTMLElement> =
+      document.querySelectorAll(".table-content");
+    tableContents.forEach((table) => {
+      table.classList.add("hidden");
+    });
+
+    const selectedTable = document.getElementById(`page-${page}`);
+    if (selectedTable) {
+      selectedTable.classList.remove("hidden");
     }
-    
-    // Adding event listeners to pagination buttons
-    document.addEventListener('DOMContentLoaded', () => {
-      const pageButtons = document.querySelectorAll('.page-button');
-      pageButtons.forEach(button => {
-        button.addEventListener('click', () => {
-          const page = parseInt((button as HTMLElement).dataset.page as string, 10);
-          showPage(page);
-        });
+  }
+
+  // Adding event listeners to pagination buttons
+  document.addEventListener("DOMContentLoaded", () => {
+    const pageButtons = document.querySelectorAll(".page-button");
+    pageButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const page = parseInt(
+          (button as HTMLElement).dataset.page as string,
+          10
+        );
+        showPage(page);
       });
     });
+  });
 </script>
-    
