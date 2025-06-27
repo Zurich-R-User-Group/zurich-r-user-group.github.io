@@ -1,37 +1,44 @@
 ---
 export interface Props {
-  Topic: string
-  Host: string
-  Speakers: string
-  Slides: string
-  }
+  Topic: string;
+  Host: string;
+  Speakers: string;
+  Slides: string;
+}
 
-  const { Topic, Host, Speakers, Slides } = Astro.props
-
-
+const { Topic, Host, Speakers, Slides } = Astro.props;
 ---
 
 <style>
-.topic-col {
-  max-width: 30%;
-  word-wrap: break-word;
-  white-space: normal;
-}
+  .topic-col {
+    max-width: 30%;
+    word-wrap: break-word;
+    white-space: normal;
+  }
 </style>
 
-
 <tr>
-  <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white topic-col">{Topic}</td>
+  <td
+    scope="row"
+    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-gray-600 topic-col"
+    >{Topic}</td
+  >
   <td class="px-6 py-4">{Host}</td>
   <td class="px-6 py-4">{Speakers}</td>
   <td class="px-6 py-4">
-    {Slides ? (
-      <a href={Slides} target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Download</a>
-    ) : (
-      <span class="text-gray-400">Not available</span>
-    )}
+    {
+      Slides ? (
+        <a
+          href={Slides}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-600 hover:underline"
+        >
+          Download
+        </a>
+      ) : (
+        <span class="text-gray-400">Not available</span>
+      )
+    }
   </td>
 </tr>
-
-
-
