@@ -21,7 +21,7 @@ We were excited to see the big crowd that *Geodata and Landscape Insights with R
 And again, geospatial insights and visualization in particular delivered. We saw spectacular [presentations from Dominque](https://raw.githubusercontent.com/Zurich-R-User-Group/zh-rug-presentations/main/pdfs/20252301_DWeber.pdf) and Micah who discussed *Ecological infrastructure planning* and *FORTE app: online tools for forests today and tomorrow*.
 
 The summer event tried out something summer vacation friendly. We focused on networking and did not invite any speakers - everyone was a speaker in our get together SummeR BeeR event.
-In September, we were back to our common meetup mode and hosted a full house for the *R for Mobility & Transportation Analytics* at the University of Zurich. Anna Reiffer from the University of Zurich presented [The R Roadmap for Mobility Behavior Analysis: From Surveys to Travel Choices and Accessibility](https://raw.githubusercontent.com/Zurich-R-User-Group/zh-rug-presentations/main/pdfs/20251009_Anna_Reiffer.pdf). Samuel Wittwer from Zurich Public Transport (VBZ) explained how [R is at the Heart of VBZ Mobility](https://raw.githubusercontent.com/Zurich-R-User-Group/zh-rug-presentations/main/pdfs/20251009_Samuel_Wittwer.pdf)
+In September, we were back to our common meetup mode and hosted a full house for the *R for Mobility & Transportation Analytics* at the University of Zurich. Anna Reiffer from ETH Zurich presented [The R Roadmap for Mobility Behavior Analysis: From Surveys to Travel Choices and Accessibility](https://raw.githubusercontent.com/Zurich-R-User-Group/zh-rug-presentations/main/pdfs/20251009_Anna_Reiffer.pdf). Samuel Wittwer from Zurich Public Transport (VBZ) explained how [R is at the Heart of VBZ Mobility](https://raw.githubusercontent.com/Zurich-R-User-Group/zh-rug-presentations/main/pdfs/20251009_Samuel_Wittwer.pdf)
 
 ## Next Zurich R User Group Meetup: DevOps for Data Science Edition @KOF Institute, ETH Zurich on January 29 
 
@@ -29,8 +29,8 @@ With the apero season in full swing and everyone invited to their fair share of 
 We are excited though to announce a topic that continues to evolve and shape the way we work with R. 
 Our next meetup will take place at the KOF Swiss Economic Institute, ETH Zurich on January 29, 2026.
 The event will be dedicated to DevOps for Data Science.
-Scientific Software Engineer Stéphane Bisinger from the KOF Swiss Economic Institute will show the Institute does *Workflow and Workload Management with Airflow & Ray in a Kubernetes environment* and how the role of R evolved in the process. 
-In the second talk DevXY founder Patrick Schratz will present his approach to *Diversify the R Ecosystem* and show *new approaches for package binaries and publishing* enable R users and developers to make choices.  
+Scientific Software Engineer Stéphane Bisinger from the KOF Swiss Economic Institute at ETH Zurich will show how the Institute handles *Workflow and Workload Management with Airflow & Ray in a Kubernetes environment*. Stéphane will highlight how the role of R evolved in the process. 
+In the second talk, devXY founder Patrick Schratz will show how he leverages different opensource components to manage data science environments professionally for his clients. On his journey to bridge data science & devOps, Patrick has authored several R packages and runs community infrastructure in addition. In his talk we will hear about Patrick's latest work on opensource powered R package binary builds and a new tool to host Shiny apps, APIs and more.
 
 
 **Event Outline**
@@ -38,7 +38,7 @@ In the second talk DevXY founder Patrick Schratz will present his approach to *D
 - Date: January 29, 2026
 - Location KOF Swiss Economic Institute, Weinbergstrasse, LEE Building, Room E 101.
 - Doors Open: 18:00, Welcome Snacks (so you don't have to starve after a long day in the office)
-- Welcome Note, event start: 18:15
+- Welcome Note, event start: 18:20
 - Talks (1 hour) & Pitches (10 minutes)
-- 19:30 Apero
-- Meetup Registration: tbd
+- ca. 19:30: Apero
+- Meetup Registration Link: tbd
