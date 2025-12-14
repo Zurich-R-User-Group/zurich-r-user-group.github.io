@@ -43,4 +43,4 @@ In the second talk, devXY founder Patrick Schratz will show how he leverages dif
 - Welcome Note, event start: 18:20
 - Talks (1 hour) & Pitches (10 minutes)
 - ca. 19:30: Apero
-- Meetup Registration Link: tbd
+- [Meetup Registration](https://www.meetup.com/zurich-r-user-group/events/312405301/)
