@@ -1,0 +1,123 @@
+---
+category: News
+draft: false
+image: "{ src:
+  \"https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?&fit=crop&w=430&h=240\",
+  alt: \"frontend master\" }"
+publishDate: 2026-06-20
+snippet: The Zürich R User Group is happy to invite you to its next
+  meetup on **R meets Health**. The meetup is generously sponsored and
+  hosted by SWICA Organisation de Santé in Winterthur.
+tags:
+- zrug
+- SWICA
+- Obsan
+- Swisstransplant
+- Value-based Healthcare
+title: "Announcing Our Next Meetup: R meets Health"
+toc-title: Table of contents
+---
+
+## R meets Health
+
+Switzerland has some of the best health outcomes in the world and one of
+the most expensive systems to run. Making better use of health data is
+central to improving population health and keeping costs in check, and R
+plays a growing role in both.
+
+This evening, we look at R and healthcare from three angles: how
+**SWICA**, a major health insurer, uses data to shift towards
+value-based care, how the **Swiss Health Observatory** uses R to plan
+and allocate resources across cantons, and how **Swisstransplant** uses
+statistical modelling to understand and predict organ transplants.
+
+**Join us for an exciting evening on analytics in healthcare, and for
+the apéro!**
+
+`<br>`{=html}
+
+## R for an efficient and qualitative health care system (Eva Blozik, SWICA)
+
+Eva Blozik, Head of Healthcare Management at SWICA, will introduce how
+data analysis drives value-based care from an insurer's perspective.
+
+`<br>`{=html}
+
+## Talk 1 (Joint Keynote): R for health policy planning - from Copy-Paste to Pipelines (Jonathan Zufferey and Reto Jörg, Obsan)
+
+#### Cantonal health reports
+
+Every five years, the Swiss Health Observatory (Obsan) produces analyses
+based on the Swiss Health Survey (SHS), providing each canton with
+detailed insights into the population's health, behaviours, and care
+utilisation.
+
+In the past, these analyses were published in reports that were created
+by exporting SAS analyses into Excel and then manually inserting them
+into Word --- a tedious process that had to be replicated for every
+canton. In 2024, the team transitioned to a fully integrated and
+automated workflow using R and Excel. This shift enabled them to
+simultaneously generate both a [web-based output](kgr.obsan.ch) and a
+pdf report.
+
+#### Primary Care Monitoring System
+
+This project examines regional disparities in access to primary care
+services in Switzerland using a Floating Catchment Area (FCA) approach
+developed by the Obsan. Healthcare provider capacity is estimated from
+health insurance claims data, while healthcare demand is modelled using
+population characteristics and commuter flows. Accessibility is assessed
+using travel times derived from road network data, with DuckDB used to
+process it efficiently.
+
+*Jonathan Zufferey is a demographer by training and holds a PhD from the
+University of Geneva. Reto Jörg is a political scientist with a
+postgraduate diploma in applied statistics from ETH Zürich. Both work as
+senior researchers at the Swiss Health Observatory (Obsan), and are
+co-responsible for the Swiss Health Care Atlas, a national platform
+tracking regional variations in healthcare use across more than 100
+indicators.*
+
+`<br>`{=html}
+
+## Talk 2 (Keynote): R for predicting kidney transplant success (Simon Schwab, Swisstransplant)
+
+In Switzerland, 292 deceased-donor kidney transplants were performed in
+2025, while over 880 patients remained on the national waiting list at
+the end of the year. Although kidney transplantation has excellent
+outcomes, graft loss remains a major concern for patients and
+clinicians.
+
+This talk presents the KIDMO project (Kidney Prediction Model), a
+statistical model to predict graft loss. Simon will explain the model
+development and validation pipeline, and demonstrate how these clinical
+prediction models can be translated into practical tools, including an R
+package and an online risk calculator built with Shiny, Quarto, and
+Posit Connect Cloud.
+
+*[Simon Schwab](https://www.statsyup.org/) is a statistician at
+Swisstransplant and a lecturer at the University of Zurich, where he
+teaches clinical biostatistics to medical students. He holds a PhD in
+Health Science and a postgraduate diploma in Statistical Data Science
+(both from the University of Bern).*
+
+`<br>`{=html}
+
+## Event Outline
+
+-   Date: **16.09.2026**
+
+-   Place: **Hotel Banana City, Winterthur**
+
+    -   18:30 opening doors, registration
+    -   18:45 Introduction (R User Group)
+    -   18:50 R for an efficient and qualitative health care system (Eva
+        Blozik, 10 min)
+    -   19:00 R for health policy planning - from Copy-Paste to
+        Pipelines (30 min + 10 min questions)
+    -   19:40 R for predicting kidney transplant success (20 min + 10
+        min questions)
+    -   20:10 apero
+    -   21:30 closing
+
+> Registration: link to Meetup
