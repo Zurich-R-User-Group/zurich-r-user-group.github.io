@@ -24,6 +24,8 @@
     "astro-icon": "^1.1.0",
     "astro-navbar": "^2.3.2",
     "astro-seo": "^0.8.3",
+    "baseline-browser-mapping": "^2.10.38",
+    "caniuse-lite": "^1.0.30001799",
     "canvas-confetti": "^1.9.3",
     "papaparse": "^5.4.1",
     "sharp": "^0.33.4",
