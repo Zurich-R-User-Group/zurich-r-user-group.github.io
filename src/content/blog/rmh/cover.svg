@@ -1,0 +1,10 @@
+<svg width="300" height="150" xmlns="http://www.w3.org/2000/svg">
+<rect width="300" height="150" fill="#2a9d8f"/>
+<text x="50%" y="35%" dominant-baseline="middle" font-family="Arial" text-anchor="middle" fill="white" font-size="22">
+  Announcing:
+  </text>
+  <text x="50%" y="65%" dominant-baseline="middle" font-family="Arial" text-anchor="middle" fill="white" font-size="24">
+  R meets Health
+  </text>
+</svg>
+<!-- Edit this yourself! -->

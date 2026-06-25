@@ -15,6 +15,21 @@ Our blog is the most dynamic part of our website and therefore uses a data scien
 We plan to cover all of our meetup events, group news, some R highlights and possibly an occasional guest post.
 The following guide assumes that you have cloned this repository.
 
+This step is important for all Scenarios:
+
+If you haven't got the repo locally yet:
+
+```
+git clone git@github.com:Zurich-R-User-Group/zurich-r-user-group.github.io.git
+```
+
+if you've already got the repo, make sure it's up to date before creating a new branch
+
+```
+git checkout main
+git pull 
+```
+
 ### Scenario A: Just Text and Images
 
 If you do not want run R code, e.g., to create figures or tables, and your blog post just consists of markdown text and few images,
@@ -25,10 +40,11 @@ To do so, simply create a new branch
 git checkout -b somepost
 ```
 
-and copy our template file to posts folder
+and copy our template file & cover template to posts folder
 
 ```
 cp src/quarto/template.qmd src/content/blog/somepost/index.md
+cp src/quarto/template.svg src/content/blog/somepost/cover.svg
 ```
 
 Where `somepost` is the slug/folder name of your blogpost, choose a lowercase only, meaningful name.
@@ -36,6 +52,9 @@ Use `kebap-case-style` if you like for better readability.
 
 Don't be fooled by the quarto folder name of the template, we just use one template for all types of posts.
 Edit the newly created file in `src/content/blog/somepost/index.md`.
+
+Also, edit the `cover.svg` to create a suitable cover for your blogpost.
+
 Once you're done commit and push the markdown file to the remote repository, issue a pull request and assign a reviewer.
 When the blog post is reviewed and merged, it gets published by GitHub Actions in automated fashion.
 
@@ -50,15 +69,19 @@ git checkout -b somepost
 The `src/quarto` folder contains a `template.qmd` file.
 In a first step please copy the `template.qmd` file to `index.qmd`.
 
-```{
+```
+cp template.svg cover.svg
 cp template.qmd index.qmd
 ```
 
-### Edit the Index.qmd
+### Edit the Index.qmd & cover.svg
 
 Edit the newly created `index.qmd` like you would edit any quarto file.
 Please do not alter or remove the `yaml` frontmatter tags themselves to guarantee proper rendering.
 Simply edit their content.
+
+Also, edit the `cover.svg` to create a suitable cover for your blogpost.
+
 
 ### Render .qmd File to Markdown
 
@@ -66,7 +89,16 @@ The following command renders your post to Markdown and places it within a folde
 In the process R code gets executed, possibly other files such as images or data outputs are stored alongside a markdown file when `qmd` gets turned into `md`.
 
 ```
-quarto render index.qmd --to markdown --output-dir ../content/blog/somepost
+# assuming you're at the root of the directory
+quarto render src/content/blog/somepost/index.qmd --to markdown --output-dir 
+```
+
+### Check that it worked
+
+```
+bun install 
+bun run dev 
+# open the localhost website and inspect that your blog post appears
 ```
 
 ### Clean Up the Markdown File
