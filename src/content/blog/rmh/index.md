@@ -5,7 +5,7 @@ coverAlt: R meets Health
 draft: false
 publishDate: 2026-06-20
 snippet: The Zürich R User Group is happy to invite you to its next
-  meetup on **R meets Health**. The meetup is generously sponsored and
+  meetup on R meets Health. The meetup is generously sponsored and
   hosted by SWICA Organisation de Santé in Winterthur.
 tags:
 - SWICA
@@ -24,20 +24,24 @@ central to improving population health and keeping costs in check, and R
 plays a growing role in both.
 
 This evening, we look at R and healthcare from three angles: how
-**SWICA**, a major health insurer, uses data to shift towards
-value-based care, how the **Swiss Health Observatory** uses R to plan
-and allocate resources across cantons, and how **Swisstransplant** uses
+[**SWICA**](https://www.swica.ch/en/private), a major health insurer,
+uses data to shift towards value-based care, how the [**Swiss Health
+Observatory**](https://www.obsan.admin.ch/en) uses R to plan and
+allocate resources across cantons, and how
+[**Swisstransplant**](https://www.swisstransplant.org/de/) uses
 statistical modelling to understand and predict organ transplants.
 
-**Join us for an exciting evening on analytics in healthcare, and for
+**📢 Join us for an exciting evening on analytics in healthcare, and for
 the apéro!**
 
-## R for an efficient and qualitative health care system (Eva Blozik, SWICA)
+## Talks
+
+### R for an efficient and qualitative health care system (Eva Blozik, SWICA)
 
 Eva Blozik, Head of Healthcare Management at SWICA, will introduce how
 data analysis drives value-based care from an insurer's perspective.
 
-## Talk 1 (Joint Keynote): R for health policy planning - from Copy-Paste to Pipelines (Jonathan Zufferey and Reto Jörg, Obsan)
+### R for health policy planning - from Copy-Paste to Pipelines (Jonathan Zufferey and Reto Jörg, Obsan)
 
 #### Cantonal health reports
 
@@ -72,7 +76,7 @@ co-responsible for the Swiss Health Care Atlas, a national platform
 tracking regional variations in healthcare use across more than 100
 indicators.*
 
-## Talk 2 (Keynote): R for predicting kidney transplant success (Simon Schwab, Swisstransplant)
+### R for predicting kidney transplant success (Simon Schwab, Swisstransplant)
 
 In Switzerland, 292 deceased-donor kidney transplants were performed in
 2025, while over 880 patients remained on the national waiting list at
@@ -99,7 +103,7 @@ Health Science and a postgraduate diploma in Statistical Data Science
 
 -   Place: **Hotel Banana City, Winterthur**
 
-    -   18:30 opening doors, registration
+    -   18:15 opening doors, registration
     -   18:45 Introduction (R User Group)
     -   18:50 R for an efficient and qualitative health care system (Eva
         Blozik, 10 min)
@@ -110,5 +114,5 @@ Health Science and a postgraduate diploma in Statistical Data Science
     -   20:10 apero
     -   21:30 closing
 
-> Registration: [link to
-> Meetup](https://www.meetup.com/zurich-r-user-group/events/315351784/?eventOrigin=group_events_list)
+> Register on Meetup
+> [**here**](https://www.meetup.com/zurich-r-user-group/events/315351784/?eventOrigin=group_events_list)
