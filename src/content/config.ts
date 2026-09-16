@@ -25,7 +25,7 @@ const blogCollection = defineCollection({
     draft: z.boolean(),
     title: z.string(),
     snippet: z.string(),
-    publishDate: z.string().transform(str => new Date(str)),
+    publishDate: z.coerce.date(),
     author: z.string().default('The Zurich R User Group'),
     category: z.string(),
     tags: z.array(z.string()),
