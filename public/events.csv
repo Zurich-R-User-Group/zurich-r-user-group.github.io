@@ -1,5 +1,5 @@
 Topic,Host,Speakers,Slides,year
-September 16: R for health policy planning - from Copy Paste to Pipelines, OBSAN, Jonathan Zufferey and Reto Jörg, ,2026
+September 16: R for health policy planning - from Copy Paste to Pipelines, OBSAN, Jonathan Zufferey and Reto Jörg,https://raw.githubusercontent.com/Zurich-R-User-Group/zh-rug-presentations/main/pdfs/20260916_OBSAN_rusergroup.pdf,2026
 September 16: R for predicting kidney transplant success, OBSAN, Simon Schwab, https://data.swisstransplant.org/slides_kidmo/slides_kidmo.html#/title-slide,2026
 January 29: Diversifying the R Ecosystem, DevXY ,Patrick Schratz,https://pat-s.me/talks/2026-01/rpkgs-ricochet?view=print#/title-slide,2026
 January 29: Workflow and Workload Management with Airflow & Ray, KOF ETH Zürich ,Stéphane Bisinger ,https://raw.githubusercontent.com/Zurich-R-User-Group/zh-rug-presentations/main/pdfs/20262901_SBisinger.pdf,2026

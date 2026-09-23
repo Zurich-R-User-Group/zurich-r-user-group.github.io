@@ -38,7 +38,7 @@ The second project was the **Primary Care Monitoring System**, a Floating Catchm
 
 
 👉 Have a look at the Cantonal Health Reports [here](https://kgr.obsan.ch/) \
-👉 Link to the slides [here]()
+👉 Link to the slides [here](https://raw.githubusercontent.com/Zurich-R-User-Group/zh-rug-presentations/main/pdfs/20260916_OBSAN_rusergroup.pdf)
 
 <!--
 - challenges: tariff inputs 120 GB, 40K parquet files
